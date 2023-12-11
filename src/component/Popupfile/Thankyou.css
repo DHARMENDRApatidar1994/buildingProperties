@@ -1,0 +1,74 @@
+.thankmain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.thankdisplay{
+    width: 45%;
+    height: 40vmax;
+    background-color: rgba(226, 226, 226, 0.829);
+    display: flex;
+   align-items: center;
+   flex-direction: column;
+   border-radius: 1vmax;
+   margin-top: 1vmax;
+}
+.thankdisplay h5{
+    font-size: 2vmax;
+    margin-top: 3vmax;
+}
+.thankdisplay p{
+    text-align: center;
+    width: 50%;
+   font-size: 1.2vmax;
+
+}
+.thankdisplay button{
+    width: 90%;
+    font-size: 1.2vmax;
+    font-weight: 600;
+    padding: 0.6vmax;
+    border-radius: 0.5vmax;
+   background-color: rgba(255, 208, 0, 0.911);
+   border: none;
+   margin-top: 22vmax;
+   
+}
+@media (max-width:600px) {
+    .thankdisplay{
+        width: 90%;
+        
+    }
+    .thankdisplay h5{
+        font-size: 3vmax;
+    }
+    .thankdisplay p{
+        width: 70%;
+       font-size: 1.5vmax;
+    
+    }
+    .thankdisplay button{
+        font-size: 1.5vmax;
+       margin-top: 19vmax;
+       
+    }
+}
+@media (min-width:600px)  and (max-width:950px) {
+    .thankdisplay{
+        width: 90%;
+        
+    }
+    .thankdisplay h5{
+        font-size: 3vmax;
+    }
+    .thankdisplay p{
+        width: 70%;
+       font-size: 1.5vmax;
+    
+    }
+    .thankdisplay button{
+        font-size: 1.5vmax;
+       margin-top: 19vmax;
+       
+    }
+}

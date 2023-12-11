@@ -1,0 +1,818 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.maillogo{
+    height: 58px;
+    width: 173px;
+}
+
+.homesec1{
+    width: 100%;
+    height: 40vmax;
+    position: relative;
+    padding-top: 5.3vmax;
+}
+.homesecoverlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);  
+    position: relative;
+    
+}
+.homesec1img{
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    z-index: -1; 
+}
+.homesec1 h1{
+    width: 35%;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    color: white;
+    
+  font-weight:900;
+  font-size: 4vmax;    
+}
+.homesec1 p{
+    width: 40%;
+    position: absolute;
+    left: 10%;
+    top: 65%;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5vmax;
+}
+.homesecsale{
+    width: 65%;
+    padding-top: 0.5vmax;
+    position: absolute;
+    bottom: -2.4vmax;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: rgb(207, 10, 10); */
+    background-color: white;
+    border-radius: 10px;
+    left: 10%;
+    padding: 5px;
+
+}
+.homesecsale input{
+  
+    font-size: 1vmax;
+   
+    /* padding: 5px 16px; */
+    padding: 0.7vmax 2.5vmax;
+}
+.homesecsale button{
+    background-color: #e8ae00;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    /* padding: 5px 12px; */
+    padding: 0.7vmax 1.2vmax;
+
+   
+}
+.homesecsale h6{
+    cursor: pointer;
+    font-size: 1.4vmax;
+    margin-top: 8px;
+    /* border: 1px solid white; */
+    border-radius: 12px;
+    padding: 0.5vmax 1vmax;
+}
+.homesecsale h6:hover{
+    /* border: 3px solid yellow; */
+    background-color: #e8ae00;
+}
+
+@media (max-width:767px) {
+    .maillogo{
+        height: 48px;
+        width: 63px;
+    }
+    .homesec1{
+        width: 100%;
+        height: 40vmax;
+        position: relative;
+    }
+    .homesecoverlay{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);  
+    position: relative; 
+       
+        
+    }
+    .homesec1img{
+        width: 100%;
+        height: 100%;
+        position: absolute;  
+    }
+    .homesec1 h1{
+        width: 75%;
+        top: 40%; 
+    }
+    .homesec1 p{
+        width: 62%;
+        position: absolute;
+        left: 10%;
+        top: 65%;
+        color: white;
+        font-weight: 500;
+        font-size: 1.5vmax;
+    }
+    .homesecsale{
+        width: 85%;
+        position: absolute;
+        bottom: -1vmax;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: white;
+        border-radius: 10px;
+        left: 2%;
+        bottom: -25px;
+        padding: 0px;
+        /* display: none; */
+    }
+    .homesecsale h6{
+        width: 30%;
+        font-size: 1.6vmax;
+       
+    }
+    .homesecsale input{
+  
+        font-size: 1vmax;
+        padding: 5px 46px;
+    }
+    .homesecsale button{
+        background-color: #e8ae00;
+        border: none;
+        border-radius: 20px;
+        font-size: 1.5vmax;
+       
+    }
+    
+}
+@media (min-width:768px) and (max-width:1024px) {
+    .maillogo{
+        height: 58px;
+        width: 173px;
+    }
+  
+        .homesec1{
+            width: 100%;
+            height: 40vmax;
+            position: relative;
+        }
+        .homesecoverlay{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); 
+            position: relative; 
+            
+        }
+        .homesec1img{
+            width: 100%;
+            height: 100%;
+            position: absolute;  
+        }
+        .homesec1 h1{
+            width: 55%;
+            top: 45%; 
+        }
+        .homesec1 p{
+            width: 50%;
+            position: absolute;
+            left: 10%;
+            top: 69%;
+            color: white;
+            font-weight: 500;
+            font-size: 1.5vmax;
+        }
+        .homesecsale{
+            width: 60%;
+            position: absolute;
+            z-index: 999;
+            bottom: -4vmax;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: center;
+            background-color: white;
+            border-radius: 10px;
+            left: 10%;
+            padding: 5px;
+          
+        }
+        .homesecsale button{
+            background-color: #e8ae00;
+            border: none;
+            border-radius: 20px;
+        }
+        
+  
+}
+
+
+/* Featured component css */
+.featuredtext{
+    font-size: 2.5vmax;
+    margin-top: 56px;
+    margin-bottom: 40px;
+    margin-left: 6vmax;
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+}
+.featuredcard{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+}
+.featuredimg{
+    position: relative;
+}
+.featuredimg h3{
+    position: absolute;
+    top: 2vmax;
+    font-size: 1vmax;
+    background-color: white;
+    /* border-radius: 2vmax; */
+    border-top-right-radius: 1vmax;
+    border-bottom-right-radius: 1vmax;
+    padding: 0.5vmax 1vmax;
+}
+.featuredimg .ellipse{
+    width: 10px;
+    height: 10px;
+    display: inline;
+    margin-right: 5px;
+    
+}
+.featuredimg i{
+    height: 2vmax;
+    width: 2vmax;
+    position: absolute;
+    top: 2vmax;
+    right: 1vmax;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.2vmax;
+}
+.featuredcard1{
+    width: 25%;
+    margin-left: 2px;
+    margin-top: 20px;
+}
+
+.featuredcard1 img{
+    width: 100%;
+    border-radius: 1.5vmax;
+}
+.featuredcard1 h4{
+    font-size: 1.6vmax;
+    font-weight: 700;
+    margin-top: 1vmax;
+}
+.featuredcard1 h5{
+    font-size: 1vmax;
+    color: #135966;
+}
+.featuredcard1 p{
+    font-size: 0.8vmax;
+    font-weight: 500;
+}
+.featuredblack{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    border-radius: 1.5vmax;
+    /* margin-left: 1vmax; */
+}
+.featuredblack p{
+    margin-top: 1vmax;
+    font-size: 1vmax;
+}
+.featuredblack p img{
+    width: 1.5vmax;
+    margin-right: 5px;
+    display: inline;
+}
+
+@media (max-width:767px) {
+    .featuredtext{
+        font-size: 3vmax;
+        margin-top: 56px;
+        margin-bottom: 0px;
+        
+    }
+   
+    .featuredcard{
+      
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .featuredimg{
+        position: relative;
+        margin-top: 10px;
+    }
+    .featuredimg h3{
+        top: 3vmax;
+        font-size: 1.8vmax;
+        background-color: white;
+        padding: 0.7vmax;
+
+    }
+    .featuredimg i{
+        height: 5vmax;
+        width: 5vmax;
+        align-items: center;
+    }
+    .featuredcard1{
+        width: 90%;
+    }
+    .featuredcard1 h4{
+        font-size: 2vmax;
+    }
+    .featuredcard1 h5{
+        font-size: 2.2vmax;     
+    }
+    .featuredcard1 p{
+        font-size: 1.7vmax;
+    }
+    .featuredblack{
+       
+       margin-bottom: 1vmax;
+    }
+    .featuredblack p{
+        margin-top: 1.4vmax;
+        font-size: 2vmax;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .featuredcard{
+      
+        /* justify-content: center; */
+        flex-wrap: wrap;
+    }
+    .featuredcard1{
+        width: 40%;
+    }
+}
+
+
+
+/* Choose component css */
+.choosecard{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #ebfffd;
+}
+.choosecard .choosecard1{
+    width: 40%;
+    background-color: white;
+    border-radius: 1vmax;
+    padding: 0.5vmax;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1vmax;
+    margin-bottom: 0.5vmax;
+}
+.iconbox{
+    width: 8vmax;
+    height: 4vmax;
+    background-color: black;
+    border-radius: 1vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconbox img{
+    width: 40px;
+}
+
+@media (max-width:767px) {
+    .choosecard{
+        justify-content: center;
+    }
+    .choosecard .choosecard1{
+        width: 90%;
+    }
+    .iconbox{
+        width: 20vmax;
+        height: 8vmax;
+    }
+    .iconbox i{
+        font-size: 2.5vmax;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+   
+    .choosecard .choosecard1{
+        width: 45%; 
+    }
+    .iconbox{
+        width: 12vmax;
+    }
+    .iconbox i{   
+        font-size: 2.5vmax;
+    }
+}
+
+
+/* Blog component css */
+
+
+.scroll-animation{
+    width: 300%;
+    display: flex;
+    animation: scroll 30s linear infinite;  
+}
+.scroll-animation:hover{
+    animation-play-state: paused;
+
+}
+
+ .blogcard1{
+    width: 25vmax;
+    border-radius: 1vmax;
+    padding: 0.5vmax;
+    margin-top: 1vmax;
+    margin-left: 2vmax;
+   
+    
+}
+@keyframes scroll {
+    0% {
+         transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
+}
+.blogcard1 img{
+    width: 100%;
+    height: 45%;
+    border-radius: 1vmax;
+}
+.blogcard1 h4{
+    height: 2.5vmax;
+    font-size: 1.2vmax;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.blogcard1 p{
+    height: 2vmax;
+    font-size: 1vmax;
+}
+.hakkies {
+    width: 100%;
+    
+
+}
+.hakkies img{
+    width: 3vmax;
+    height: 3vmax;
+}
+.hakkies h5{
+    font-size: 1vmax;
+    font-weight: 700;
+}
+.hakkies p{
+    font-size: 1vmax;
+}
+
+@media (max-width:767px) {
+    .blogcard{
+      
+        justify-content: center;
+    }
+     .blogcard1{
+        width: 90%;
+        border-radius: 1vmax;
+        padding: 0.5vmax;
+        margin-top: 1vmax;
+        
+    }
+    .blogcard1 img{
+        width: 100%;
+        border-radius: 1vmax;
+    }
+    .blogcard1 h4{
+        height:auto;
+        font-size: 2.2vmax;
+        font-weight: 600;
+    }
+    .blogcard1 p{
+        font-size: 1.7vmax;
+    }
+    .hakkies {
+        width: 100%;
+        
+    
+    }
+    .hakkies img{
+        width: 5vmax;
+        height: 5vmax;
+    }
+    .hakkies h5{
+        font-size: 2.2vmax;
+        font-weight: 700;
+    }
+    .hakkies p{
+        font-size: 1.7vmax;
+    }
+}
+
+/* properties component css */
+.linecard{
+    height: 331px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    margin-left: 4.5vmax;
+   
+}
+.linecard img{
+    width: 1440px;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.line{
+    border-right: 1px solid #007781;
+    padding-right: 3.5vmax;
+    margin-top: 3vmax;
+    margin-bottom: 2vmax;
+}
+.line h3{
+    color: #007781;
+    font-weight: 700;
+    font-size: 48px;
+}
+.lastline{
+    padding-right: 7vmax;
+    margin-top: 3vmax;
+    margin-bottom: 2vmax;
+}
+.lastline h3{
+    color: #007781;
+    font-weight: 700;
+    font-size: 48px;
+}
+.line p{
+    font-size: 28px;
+}
+.lastline p{
+    font-size: 28px;
+}
+
+@media (max-width:767px) {
+    .linecard{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        position: relative;
+        align-items: center;
+    }
+    .line{
+        border-right: 0px solid #007781;
+        padding-right: 0vmax;
+        margin-left: 25px;
+      
+    }
+    .lastline{
+        padding-right: 0vmax;
+        margin-top: 3vmax;
+        margin-bottom: 2vmax;
+    }
+}
+
+
+/* Customer Review css  */
+
+.CustomerReview{
+    width: 100%;
+    overflow: hidden;
+    
+}
+.CustomerReview .customer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:#ebfffd;
+    padding-bottom: 4vmax;
+    padding-bottom: 160px;
+} 
+.CustomerReview .customer .CustomerTop{
+    width: 100%;
+    height: auto;
+    margin-top: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+
+} 
+.CustomerReview .customer .CustomerTop button{
+    background-color: #e8ae00;
+    border: none;
+    padding: 0.4vmax 0.8vmax;
+    border-radius: 12px;
+    margin-right: 85px;
+    padding: 0.7vmax 1vmax;
+} 
+.CustomerReview .customer .CustomerTop h2{
+    margin-left: 85px;
+}
+
+.CustomerReview .customer .customerMedium{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 7vmax;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+} 
+.CustomerReview .customer .customerBottom{
+    width: 300%;
+    display: flex;
+    animation: scroll 30s linear infinite;  
+    /* width: 100%; */
+    display: flex;
+    margin-top: 1vmax;
+    /* align-items: center;
+    justify-content:space-evenly; */
+} 
+.CustomerReview .customer .customerBottom:hover{
+    animation-play-state: paused;
+}
+.CustomerReview .customer .customerBottom .Box{
+    width: 398px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(249, 249, 249);
+    box-shadow: 2px 2px 5px 2px rgba(128, 127, 127, 0.457);
+    align-items: center;
+    justify-content: center;
+    margin-left: 2vmax;
+} 
+.CustomerReview .customer .customerBottom .Box .Btop{
+    width: 330px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.CustomerReview .customer .customerBottom .Box .Btop img{
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+  transform: translateY(10px);
+  margin-left: 2vmax;
+}
+.CustomerReview .customer .customerBottom .Box .Btop h3{
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 0.5vmax;
+  margin-left: 0.5vmax;
+
+ 
+}
+.CustomerReview .customer .customerBottom .Box h6{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 40%;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    transform: translateY(-10px);
+} 
+.CustomerReview .customer .customerBottom .Box p{
+    width: 90%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+} 
+.CustomerReview .customer .customerBottom .Box .Bbtm{
+    width: 290px;
+    height: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.7vmax;
+    justify-content: space-between;
+}
+.CustomerReview .customer .customerBottom .Box .Bbtm .icons i{
+    font-size: 26px;
+    color: green;
+}
+.CustomerReview .customer .customerBottom .Box .Bbtm .arrow i{
+    border: 1px solid black;
+    padding: 0.4vmax;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+@media (max-width:600px) {
+   
+    .CustomerReview .customer .CustomerTop h2{
+        margin-left: 15px;
+        font-size: 2.5vmax;
+    }
+    .CustomerReview .customer .CustomerTop button{
+        margin-right: 15px;  
+    } 
+    .CustomerReview .customer .customerMedium{
+              width: 90%;
+    padding-left: 0vmax;
+       justify-content: start;
+         font-size: 1.8vmax;
+    } 
+  
+    .CustomerReview .customer .customerBottom{
+        flex-direction: column;
+    } 
+    .CustomerReview .customer .customerBottom .Box{
+       margin-top: 1.5vmax;
+    } 
+   
+   
+   
+   
+   
+   
+   
+   
+  
+}
+@media (min-width:600px) and (max-width:950px)  {
+    .CustomerReview .customer .CustomerTop{
+              width: 100%;
+              height: auto;
+              /* justify-content: space-evenly; */
+    }
+    .CustomerReview .customer .CustomerTop h2{
+              font-size: 2.5vmax;
+    }
+    .CustomerReview .customer .CustomerTop button{
+              padding: 0.4vmax 1vmax;
+    } 
+    .CustomerReview .customer .customerMedium{
+              width: 90%;
+    padding-left: 4.7vmax;
+justify-content: start;
+    } 
+    .CustomerReview .customer .customerBottom{
+             /* flex-direction: column; */
+             flex-wrap: wrap;
+             width: 100%;
+             justify-content: space-evenly;
+    } 
+    .CustomerReview .customer .customerBottom .Box{
+              width: 40%;
+              margin-top: 2vmax;
+              
+    }  
+    .CustomerReview .customer .customerBottom .Box .Btop h3{
+             font-size: 1.5vmax;
+    } 
+    .CustomerReview .customer .customerBottom .Box p{
+              width: 90%;
+    } 
+    .CustomerReview .customer .customerBottom .Box  h6{
+              width: 90%;
+              font-size: 1.5vmax;
+   
+    } 
+    .CustomerReview .customer .customerBottom .Box .Bbtm .icons i{
+              font-size: 2.5vmax;
+    }
+}

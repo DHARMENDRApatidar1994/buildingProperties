@@ -1,0 +1,161 @@
+.footer {
+    position: relative;
+    width: 100%;
+  }
+  .footer img{
+    position: absolute;
+    width: 100%;
+    height: 25vmax;
+  }
+  
+  
+  .finputmain {
+    position: relative; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .finput {
+    width: 40%;
+    background-color: white;
+    padding: 0.4vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5vmax;
+    margin-top: -22px;
+  }
+  
+  .finput input {
+    width: 75%;
+    padding: 0.6vmax;
+    border: 1px solid rgb(255, 208, 0);
+    font-size: 1vmax;
+    border-radius: 0.5vmax;
+   
+  }
+  
+  .finput button {
+    background-color: rgb(247, 181, 1);
+    padding: 0.6vmax 1vmax;
+    border: none;
+    border-radius: 0.5vmax;
+    margin-left: -1vmax;
+  }
+  
+  .fdisplay {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .fmain {
+    position: relative; /* Make sure the child elements respect the stacking context */
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3vmax;
+    padding-bottom: 1.5vmax;
+    border-bottom: 1px solid rgb(116, 115, 115);
+    z-index: 2; /* Place the content above the overlay */
+  }
+  
+  .fmain h6 {
+    color: white;
+    position: relative; /* Ensure the text is positioned correctly within its container */
+    z-index: 3; /* Set a higher z-index for the text to be above the overlay */
+  }
+  
+  .flast {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .flast .flastone {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 5vmax;
+    margin-top: 2vmax;
+  }
+  
+  .flast .flastone i {
+    background-color: white;
+    color: black;
+    padding: 0.3vmax 0.7vmax;
+    border-radius: 3vmax;
+    font-size: 1.5vmax;
+    cursor: pointer;
+  }
+  
+  .flast .flasttwo h6 {
+    font-size: 0.9vmax;
+    margin-right: 5vmax;
+    margin-top: 1vmax;
+ 
+  }
+  
+
+
+  @media (max-width:600px) {
+      .finput {
+        width: 90%;
+        padding: 0.5vmax;
+      }
+      
+      .finput input {
+        width: 60%;
+        padding: 0.6vmax;
+        font-size: 1.5vmax;
+      }
+      
+      .finput button {
+        padding: 0.5vmax 1.4vmax;
+        font-size: 1.6vmax;
+      }
+      .fmain h6 {
+        font-size: 1.3vmax;
+        z-index: 3; 
+      }
+      
+      .flast .flastone {
+        width: 40%;
+        margin-right: 3vmax;
+      }
+      
+      .flast .flastone i {
+        font-size: 2vmax;
+      }
+      
+      .flast .flasttwo h6 {
+        font-size: 1.5vmax;
+      }
+      
+  }
+
+  @media (min-width:600px) and (max-width:950px) {
+    .finput {
+        width: 90%;
+        padding: 0.5vmax;
+      }
+      
+      .finput input {
+        width: 60%;
+        padding: 0.6vmax;
+        font-size: 1.2vmax;
+      }
+      
+      .finput button {
+        padding: 0.5vmax 1.4vmax;
+        font-size: 1.3vmax;
+      }
+  }

@@ -1,0 +1,101 @@
+.thankmain2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.thankdisplay2{
+    width: 45%;
+    height: 40vmax;
+    background-color: rgba(241, 240, 240, 0.829);
+    display: flex;
+    justify-content: space-evenly;
+   align-items: center;
+   flex-direction: column;
+   border-radius: 1vmax;
+   margin-top: 1vmax;
+}
+.thankdisplay2 h5{
+    font-size: 2vmax;
+  
+}
+.thankdisplay2 p{
+    text-align: center;
+    width: 90%;
+   font-size: 1.2vmax;
+   margin-top: -2vmax;
+
+}
+.thankdisplay2 input{
+    font-size: 1vmax;
+    padding: 0.6vmax;
+    border-radius: 0.5vmax;
+    border: 1px solid rgb(255, 208, 0);
+    margin-top: 0.5vmax;
+    color: rgb(206, 206, 206);
+}
+.thankdisplay2 textarea{
+    font-size: 1vmax;
+    border-radius: 0.5vmax;
+    border: 1px solid rgb(255, 208, 0);
+    margin-top: 0.5vmax;
+}
+.thankdisplay2 button{
+    width: 90%;
+    font-size: 1.2vmax;
+    font-weight: 600;
+    padding: 0.6vmax;
+    border-radius: 0.5vmax;
+   background-color: rgba(255, 208, 0, 0.911);
+   border: none;
+   
+}
+@media (max-width:600px) {
+    .thankdisplay2{
+        width: 90%;
+        height: 60vmax;
+    }
+    .thankdisplay2 h5{
+        font-size: 3vmax;
+    }
+    .thankdisplay2 p{
+        width: 90%;
+       font-size: 1.5vmax;
+    
+    }
+    .thankdisplay2 button{
+        font-size: 1.5vmax;
+    }
+    .thankdisplay2 input{
+        font-size: 1.5vmax;
+       
+    }
+    .thankdisplay2 textarea{
+        font-size: 1.5vmax;
+      
+    }
+   .thankdisplay2 .lable{
+    font-size: 2vmax;
+   }
+    
+    
+}
+@media (min-width:600px)  and (max-width:950px) {
+    .thankdisplay2{
+        width: 90%;
+        height: 60vmax;
+        
+    }
+    .thankdisplay h5{
+        font-size: 3vmax;
+    }
+    .thankdisplay p{
+        width: 70%;
+       font-size: 1.5vmax;
+    
+    }
+    .thankdisplay button{
+        font-size: 1.5vmax;
+       margin-top: 19vmax;
+       
+    }
+}

@@ -1,0 +1,282 @@
+.rentsec1{
+    width: 100%;
+    height: 25vmax;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ebfffd;
+    padding-top: 5.2vmax;
+   }
+.rentsec1-left{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5vmax;
+    
+}
+.rentsec1-left h6{
+    /* width: 50%; */
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    display: inline-block;
+    margin-top: 1vmax;
+   
+}
+.rentsec1-left h6 span{
+    color: #01b8c6;
+}
+.rentsec1-left h2{
+  font-size: 3.5vmax;
+
+}
+.rentsec1-left p{
+  font-size: 1.4vmax;
+}
+
+.frentinput {
+    width: 80%;
+    background-color: white;
+    padding: 0.4vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5vmax;
+    margin-top: -22px;
+    margin-left: 25px;
+   
+    
+  }
+  
+  .frentinput input {
+    width: 25%;
+    padding: 0.6vmax;
+    border: 1px solid rgb(255, 208, 0);
+    font-size: 1vmax;
+    border-radius: 0.5vmax;
+   
+   
+  }
+  
+  .frentinput button {
+    background-color: rgb(247, 181, 1);
+    padding: 0.6vmax 1vmax;
+    border: none;
+    border-radius: 0.5vmax;
+    margin-left: 1vmax;
+   
+  }
+  .selectopt{
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 8px;
+  }
+  .responsivefrentinput{
+    display: none;
+  }
+
+  @media (max-width:767px) {
+
+    .rentsec1{
+    width: 100%;
+    height: 20vmax;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ebfffd;
+   }
+.rentsec1-left{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.5vmax;
+    
+}
+.rentsec1-left h6{
+    width: 60%;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.rentsec1-left h2{
+    font-size: 2vmax;
+}
+.rentsec1-left p{
+    font-size: 1.5vmax;
+}
+.rentsec1-left h6 span{
+    color: #01b8c6;
+}
+.rentsec1 img{
+    width: 30%;
+}
+    .responsivefrentinput{
+        display: initial;
+        width: 80%;
+        background-color: white;
+        padding: 0.4vmax;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.5vmax;
+        margin-top: -22px;
+        margin-left: 25px;
+    }
+    .responsivefrentinput input {
+        width: 45%;
+        padding: 0.6vmax;
+        border: 1px solid rgb(255, 208, 0);
+        font-size: 1vmax;
+        border-radius: 0.5vmax;
+       
+       
+      }
+      
+      .responsivefrentinput button {
+        background-color: rgb(247, 181, 1);
+        padding: 0.6vmax 1vmax;
+        border: none;
+        border-radius: 0.5vmax;
+        margin-left: 1vmax;
+       
+      }
+    .frentinput{
+        display: none;
+    }
+  }
+
+
+
+  /* forrentsignin css */
+  .forrentsignin{
+    padding: 4vmax ;
+
+    background-color: #ebfffd;
+    margin-top: 56px;
+    padding-bottom: 200px;
+  }
+  .forrentsignin h3{
+    font-size: 2.7vmax;
+    font-weight: 700;
+    margin-bottom: 1vmax;
+  }
+  .forrentsignin p{
+    font-size: 1.2vmax;
+  }
+  .forrentsignin button{
+    border: none; 
+    border-radius: 5px;
+    background-color: #01b8c6;
+    color: white;
+    padding: 0.5vmax;
+  }
+
+  /* search for sale css start */
+
+  .searchsec1{
+    width: 13%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 2px;
+    margin-left: 8%;
+    margin-top: 15px;
+
+  }
+  .searchsec1 span{
+    color: #01b8c6;
+  }
+
+  .searchsec2 img{
+    width: 84%;
+    height: 30vmax;
+    margin-left: 8vmax;
+    margin-top: 2vmax;
+    border-radius: 1.5vmax;
+  }
+
+  .searchinput {
+    width: 100%;
+    background-color: white;
+    padding: 0.4vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5vmax;
+    margin-top: -48px;
+   
+   
+    
+  }
+  
+  .searchinput input {
+    width: 25%;
+    padding: 0.6vmax;
+    border: 1px solid rgb(255, 208, 0);
+    font-size: 1vmax;
+    border-radius: 0.5vmax;
+   
+   
+  }
+  
+  .searchinput button {
+    background-color: rgb(247, 181, 1);
+    padding: 0.6vmax 1vmax;
+    border: none;
+    border-radius: 0.5vmax;
+    margin-left: 1vmax;
+   
+  }
+   .searchinput .selectopt{
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 8px;
+  }
+
+  .oxford{
+    font-size: 2vmax;
+    margin-left: 8%;
+    margin-top: 40px;
+  }
+  .result{
+    width: 84%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 8%;
+    margin-bottom: 20px;
+  }
+  .result button{
+    border: 1px solid yellow;
+    border-radius: 5px;
+    background-color: white;
+    padding: 0.8vmax;
+  }
+  .result span{
+    font-weight: 600;
+  }
+  .result h4{
+    font-size: 1.2vmax;
+    color: #01b8c6;
+    word-spacing: 3px;
+  }
+
+  /* -------------------------- */
+ 
+
+
+ 
+  
+
+
+
+
+
+
+
+
+ 
