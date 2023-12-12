@@ -1,6 +1,16 @@
-export const investment = [
+import invest2 from '../../assets/Images/property/invest2.png'
+import featuredimg3 from '../../assets/Images/property/featuredimg3.jpg'
+import featuredimg2 from '../../assets/Images/property/featuredimg2.jpg'
+import sale4 from '../../assets/Images/property/sale4.png'
+import sale5 from '../../assets/Images/property/sale5.png'
+import invest6 from '../../assets/Images/property/invest6.png'
+import invest8 from '../../assets/Images/property/invest8.png'
+import sale8 from '../../assets/Images/property/sale8.png'
+import sale9 from '../../assets/Images/property/sale9.png'
+   
+   export const investment = [
     {
-        image:"featuredimg3.jpg",
+        image:featuredimg3,
         price:"810,550",
         est:"7,250",
         title:"Residential",
@@ -10,7 +20,7 @@ export const investment = [
         furniture:"Equity ownership",
     },
     {
-        image:"invest2.png",
+        image:invest2,
         price:"4,025",
         est:"3,250",
         title:"Land",
@@ -20,7 +30,7 @@ export const investment = [
         furniture:"Rentel Income",
     },
     {
-        image:"featuredimg2.jpg",
+        image:featuredimg2,
         price:"6,250",
         est:"17,250",
         title:"Industrial",
@@ -30,7 +40,7 @@ export const investment = [
         furniture:"Joined venture",
     },
     {
-        image:"sale5.png",
+        image:sale5,
         price:"345,450",
         est:"17,250",
         title:"Special purpose",
@@ -40,7 +50,7 @@ export const investment = [
         furniture:"Rentel income",
     },
     {
-        image:"sale4.png",
+        image:sale4,
         price:"645,000",
         est:"7,250",
         title:"Residential",
@@ -50,7 +60,7 @@ export const investment = [
         furniture:"join venture",
     },
     {
-        image:"invest6.png",
+        image:invest6,
         price:"20,000",
         est:"3,250",
         title:"Land",
@@ -60,7 +70,7 @@ export const investment = [
         furniture:"join venture",
     },
     {
-        image:"sale8.png",
+        image:sale8,
         price:"125,000",
         est:"7,250",
         title:"Industrial",
@@ -70,7 +80,7 @@ export const investment = [
         furniture:"join venture",
     },
     {
-        image:"invest8.png",
+        image:invest8,
         price:"3,450",
         est:"17,250",
         title:"Land ",
@@ -80,7 +90,7 @@ export const investment = [
         furniture:"Equity Ownership",
     },
     {
-        image:"sale9.png",
+        image:sale9,
         price:"800,000",
         est:"7,250",
         title:"Special Purpose",

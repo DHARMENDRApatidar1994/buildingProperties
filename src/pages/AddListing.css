@@ -28,6 +28,7 @@
     /* background-color: red; */
     color: white;
     margin-left: 5vmax;
+    z-index: 1;
 }
 .textbox .selltext{
     font-size: 3.8vmax;
@@ -51,6 +52,7 @@
     border-radius: 1vmax;
     padding: 1vmax;
     margin-left: 5vmax;
+    z-index: 1;
 }
 .featurebuttonaddlisting .sellproperty{
     margin-right: 1vmax;
@@ -76,4 +78,7 @@
 .adddetails{
     margin-top: 3vmax;
 }
+
+
+
 

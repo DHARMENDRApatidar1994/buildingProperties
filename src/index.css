@@ -29,7 +29,8 @@
 
 .cursorHover .hoverLink:hover{
     
-  background-color: #dfab11;
+  /* background-color: #f0d90e; */
+  background-color: #0aa595;
   border-radius: 10px;
   /* color: white; */
   z-index: 999;
@@ -83,7 +84,6 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* background-color: rgb(207, 10, 10); */
     background-color: white;
     border-radius: 10px;
     left: 10%;
@@ -91,10 +91,7 @@
 
 }
 .homesecsale input{
-  
     font-size: 1vmax;
-   
-    /* padding: 5px 16px; */
     padding: 0.7vmax 2.5vmax;
 }
 .homesecsale button{
@@ -111,13 +108,12 @@
     cursor: pointer;
     font-size: 1.4vmax;
     margin-top: 8px;
-    /* border: 1px solid white; */
     border-radius: 12px;
     padding: 0.5vmax 1vmax;
 }
 .homesecsale h6:hover{
-    /* border: 3px solid yellow; */
-    background-color: #e8ae00;
+    /* background-color: #e8ae00; */
+    background-color: #0aa595;
 }
 
 @media (max-width:767px) {
@@ -169,7 +165,6 @@
         left: 2%;
         bottom: -25px;
         padding: 0px;
-        /* display: none; */
     }
     .homesecsale h6{
         width: 30%;
@@ -256,7 +251,6 @@
     margin-top: 56px;
     margin-bottom: 40px;
     margin-left: 6vmax;
-    /* font-family: 'Exo', sans-serif; */
     font-family: 'Kanit', sans-serif;
     font-weight: 600;
 }
@@ -277,7 +271,6 @@
     top: 2vmax;
     font-size: 1vmax;
     background-color: white;
-    /* border-radius: 2vmax; */
     border-top-right-radius: 1vmax;
     border-bottom-right-radius: 1vmax;
     padding: 0.5vmax 1vmax;
@@ -332,7 +325,6 @@
     align-items: center;
     color: white;
     border-radius: 1.5vmax;
-    /* margin-left: 1vmax; */
 }
 .featuredblack p{
     margin-top: 1vmax;
@@ -348,12 +340,10 @@
     .featuredtext{
         font-size: 3vmax;
         margin-top: 56px;
-        margin-bottom: 0px;
-        
+        margin-bottom: 0px;   
     }
    
     .featuredcard{
-      
         justify-content: center;
         flex-wrap: wrap;
     }
@@ -397,8 +387,6 @@
 
 @media (min-width:768px) and (max-width:1024px) {
     .featuredcard{
-      
-        /* justify-content: center; */
         flex-wrap: wrap;
     }
     .featuredcard1{
@@ -477,7 +465,6 @@
     width: 300%;
     display: flex;
     animation: scroll 20s linear infinite; 
-    /* background-color: #dfab11;  */
 }
 .scroll-animation:hover{
     animation-play-state: paused;
@@ -539,44 +526,14 @@
 @media (max-width:767px) {
     .scroll-animation{
         width: 300vmax;
-        /* display: flex;
-        animation: scroll 20s linear infinite;  */
-        /* background-color: #dfab11;  */
     }
-    /* .scroll-animation:hover{
-        animation-play-state: paused;
-    
-    } */
     
      .blogcard1{
-        /* width: 25vmax; */
-        height: auto;
-        /* border-radius: 1vmax;
-        padding: 0.5vmax;
-        margin-top: 1vmax;
-        margin-left: 2vmax; */
-        
-       
-        
+        height: auto;   
     }
-    /* @keyframes scroll {
-        0% {
-             transform: translateX(0);
-        }
-        100% {
-            transform: translateX(calc(-250px * 8));
-        }
-    } */
-    /* .blogcard1 img{
-        width: 100%;
-        height: 40%;
-        border-radius: 1vmax;
-    } */
     .blogcard1 h4{
         height: auto;
         font-size: 1.6vmax;
-        /* font-weight: 600; */
-        /* margin-top: 20px; */
     }
     .blogcard1 p{
         height: auto;
@@ -721,11 +678,8 @@
     width: 300%;
     display: flex;
     animation: review 30s linear infinite;  
-    /* width: 100%; */
     display: flex;
     margin-top: 1vmax;
-    /* align-items: center;
-    justify-content:space-evenly; */
 } 
 .CustomerReview .customer .customerBottom:hover{
     animation-play-state: paused;
@@ -822,22 +776,6 @@
        justify-content: start;
          font-size: 1.8vmax;
     } 
-  
-    /* .CustomerReview .customer .customerBottom{
-        flex-direction: column;
-    } 
-    .CustomerReview .customer .customerBottom .Box{
-       margin-top: 1.5vmax;
-    }  */
-   
-   
-   
-   
-   
-   
-   
-   
-  
 }
 @media (min-width:600px) and (max-width:950px)  {
     .CustomerReview .customer .CustomerTop{
@@ -856,29 +794,5 @@
     padding-left: 4.7vmax;
 justify-content: start;
     } 
-    /* .CustomerReview .customer .customerBottom{
-             
-              flex-wrap: wrap;
-             width: 100%;
-             justify-content: space-evenly;
-    } 
-    .CustomerReview .customer .customerBottom .Box{
-              width: 40%;
-              margin-top: 2vmax;
-              
-    }  
-    .CustomerReview .customer .customerBottom .Box .Btop h3{
-             font-size: 1.5vmax;
-    } 
-    .CustomerReview .customer .customerBottom .Box p{
-              width: 90%;
-    } 
-    .CustomerReview .customer .customerBottom .Box  h6{
-              width: 90%;
-              font-size: 1.5vmax;
    
-    } 
-    .CustomerReview .customer .customerBottom .Box .Bbtm .icons i{
-              font-size: 2.5vmax;
-    }  */
 }  

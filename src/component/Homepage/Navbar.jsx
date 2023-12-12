@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Signin from '../Popupfile/Signin';
 import maillogo from '../../assets/Images/navimage/hdlogo.svg'
 import Homepounds from '../../assets/Images/navimage/Home pounds.png'
+// import DashboardPage from '../dashboard/DashboardPage';
 
 const Navbar = () => {
   const [isPopupOpen, setPopupOpen] = useState(false);
@@ -48,7 +49,8 @@ const Navbar = () => {
                
                 {isUserSignedIn ? (
             
-                  <h6 >Account</h6>
+                 
+                  <h6 onClick={() => handleSign('signin')}>Account</h6>
                   ) : (
             <h6 onClick={() => handleSign('signin')}>Sign in</h6>
           )}
@@ -56,15 +58,15 @@ const Navbar = () => {
             </div>
         )}
             <div  className='cursorHover col-lg-6 col-md-8 d-lg-flex d-none  d-lg-initial justify-content-evenly align-items-center'>
-                <Link className='hoverLink'  style={{textDecoration:"none"}} to="/" ><h5 style={{  backgroundColor: activeItem === 'home' ? '#e8ae00' : 'transparent' }} onClick={() => handleItemClick('home')}><img className='mb-1' style={{display:"inline"}} src="home.png" alt="" /> Home</h5></Link>
-                <Link className='hoverLink' style={{textDecoration:"none"}}  to='/forsale'><h5 style={{  backgroundColor: activeItem === 'forsale' ? '#e8ae00' : 'transparent'  }} onClick={() => handleItemClick('forsale')}>For Sale</h5></Link> 
-                <Link className='hoverLink' style={{textDecoration:"none"}}  to='/forrent'><h5 style={{backgroundColor: activeItem === 'forrent' ? '#e8ae00' : 'transparent'  }} onClick={() => handleItemClick('forrent')}>For rent</h5></Link> 
-                <Link className='hoverLink'  style={{textDecoration:"none"}}  to='/forinvestment'><h5 style={{  backgroundColor: activeItem === 'forinvestment' ? '#e8ae00' : 'transparent'  }} onClick={() => handleItemClick('forinvestment')}>For investment</h5></Link> 
-                <Link className='hoverLink'  style={{textDecoration:"none"}}  to='/blog'><h5 style={{  backgroundColor: activeItem === 'blog' ? '#e8ae00' : 'transparent'  }} onClick={() => handleItemClick('blog')}>Blog</h5></Link>
+                <Link className='hoverLink'  style={{textDecoration:"none"}} to="/" ><h5 style={{  backgroundColor: activeItem === 'home' ? '#ebfffd' : 'transparent' }} onClick={() => handleItemClick('home')}><img className='mb-1' style={{display:"inline"}} src="home.png" alt="" /> Home</h5></Link>
+                <Link className='hoverLink' style={{textDecoration:"none"}}  to='/forsale'><h5 style={{  backgroundColor: activeItem === 'forsale' ? '#ebfffd' : 'transparent'  }} onClick={() => handleItemClick('forsale')}>For Sale</h5></Link> 
+                <Link className='hoverLink' style={{textDecoration:"none"}}  to='/forrent'><h5 style={{backgroundColor: activeItem === 'forrent' ? '#ebfffd' : 'transparent'  }} onClick={() => handleItemClick('forrent')}>For rent</h5></Link> 
+                <Link className='hoverLink'  style={{textDecoration:"none"}}  to='/forinvestment'><h5 style={{  backgroundColor: activeItem === 'forinvestment' ? '#ebfffd' : 'transparent'  }} onClick={() => handleItemClick('forinvestment')}>For investment</h5></Link> 
+                <Link className='hoverLink'  style={{textDecoration:"none"}}  to='/blog'><h5 style={{  backgroundColor: activeItem === 'blog' ? '#ebfffd' : 'transparent'  }} onClick={() => handleItemClick('blog')}>Blog</h5></Link>
                 {isUserSignedIn ? (
                    <h6 >Account</h6>
                   ) : (
-                 <Link className='hoverLink' style={{textDecoration:"none"}} > <h5   style={{  backgroundColor: activeItem === 'signin' ? '#e8ae00' : 'transparent' }} onClick={() => handleSign('signin')}>Sign in</h5></Link>
+                 <Link className='hoverLink' style={{textDecoration:"none"}} > <h5   style={{  backgroundColor: activeItem === 'signin' ? '#ebfffd' : 'transparent' }} onClick={() => handleSign('signin')}>Sign in</h5></Link>
                 )}
             </div>
             <div>
@@ -73,6 +75,7 @@ const Navbar = () => {
         </div>
      
          <Signin open={open} setOpen={setOpen} onSignInClick={toggleSignIn} />
+       
         
          
        

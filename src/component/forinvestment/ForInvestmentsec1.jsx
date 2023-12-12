@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import '../forrent/Forrent.css'
 import { investment } from './InvestmentData'
+import { useNavigate } from 'react-router-dom'
+import bathhub from '../../assets/Images/property/bathub.png'
 
 const ForInvestmentsec1 = () => {
+    const navigate = useNavigate()
   const [isFilterOpen,setIsFilterOpen] = useState(false)
 
  
@@ -16,7 +19,7 @@ const ForInvestmentsec1 = () => {
 
                 <h6>Home/<span>For investment</span></h6>
                 <h2>Properties For investment</h2>
-                <p>Search for the best houses to rent in your area.</p>
+                <p>Search for the best houses to invest in your area.</p>
               
                </div>
             </div>
@@ -171,19 +174,19 @@ const ForInvestmentsec1 = () => {
        
         <div className='featuredcard1' key={index}>
             <div className='featuredimg'>
-                <img src={value.image} alt="" />
+                <img onClick={()=>{navigate(`/investmentpropertyDetailPage/${index}`)}} src={value.image} alt="" />
                 <i class="ri-heart-line "></i>
             </div>
             <div>
                 <div className='d-flex justify-content-between align-items-center'>
-                <h4><i class="ri-money-pound-circle-fill"></i>{value.price} pcm</h4>
+                <h4>£{value.price} pcm</h4>
                 <h6 className='mt-3 '>Est. Value:<i class="ri-money-pound-circle-fill"></i>{value.est}</h6>
                 </div>
                 <h5>{value.title}</h5>
             <p>{value.address}</p>
             <div className='featuredblack'>
               <p><i class="ri-hotel-bed-fill me-2"></i>{value.bed}</p>
-              <p><img src="bathub.png" alt="" />{value.bath}</p>
+              <p><img src={bathhub} alt="" />{value.bath}</p>
               <p><i class="ri-sofa-fill me-2"></i>{value.furniture}</p>
             </div>
         </div>

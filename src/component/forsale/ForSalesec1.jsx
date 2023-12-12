@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../forrent/Forrent.css'
 import { sale } from './SaleData'
 import { useNavigate } from 'react-router-dom'
+import bathhub from '../../assets/Images/property/bathub.png'
 
 const ForSalesec1 = () => {
     const navigate = useNavigate()
@@ -20,7 +21,7 @@ const ForSalesec1 = () => {
 
                         <h6>Home/<span>For Sale</span></h6>
                         <h2>Properties For Sale</h2>
-                        <p>Search for the best houses to rent in your area.</p>
+                        <p>Search for the best houses for sale in your area.</p>
 
                     </div>
                 </div>
@@ -175,17 +176,17 @@ const ForSalesec1 = () => {
 
                     <div className='featuredcard1' key={index}>
                         <div className='featuredimg'>
-                            < img onClick={()=>{navigate(`/propertyDetailPage/${index}`)}} src={value.image} alt="" />
+                            < img onClick={()=>{navigate(`/salepropertyDetailPage/${index}`)}} src={value.image} alt="" />
                             <i class="ri-heart-line "></i>
                         </div>
                         <div>
-                            <h4><i class="ri-money-pound-circle-fill"></i>{value.price} pcm</h4>
+                            <h4>£{value.price} pcm</h4>
 
                             <h5>{value.title}</h5>
                             <p>{value.address}</p>
                             <div className='featuredblack'>
                                 <p><i class="ri-hotel-bed-fill me-2"></i>{value.bed}</p>
-                                <p><img src="bathub.png" alt="" />{value.bath}</p>
+                                <p><img src={bathhub} alt="" />{value.bath}</p>
                                 <p><i class="ri-sofa-fill me-2"></i>{value.furniture}</p>
                             </div>
                         </div>

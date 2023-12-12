@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react'
-import './PropertyDetailPage.css'
-import { sale } from '../forsale/SaleData'
+import '../forrent/PropertyDetailPage.css'
+import { sale } from './SaleData'
 import Signin from '../Popupfile/Signin'
 import { useParams } from 'react-router-dom'
-import { rent } from './RentData'
 import plan from '../../assets/Images/property/plan.png'
 import map from '../../assets/Images/property/map.png'
 import bath from '../../assets/Images/property/bathub24.png'
 import calender from '../../assets/Images/property/calendar.png'
 
-const PropertyDetailPage = () => {
+
+const SalePropertyDetailPage = () => {
     const [open, setOpen] = useState(false)
 
     const [isShare, setIsShare] = useState(false)
@@ -19,7 +19,7 @@ const PropertyDetailPage = () => {
 
     const { id } = useParams();
     //   console.log(id);
-      const obj = rent[id];
+      const obj = sale[id];
     //   console.log(obj)
     //   console.log(blog);
     const handleClick = (index) => {
@@ -85,7 +85,7 @@ const PropertyDetailPage = () => {
                         <h2 className='mt-5'>£{obj.price}</h2>
                         <h4 className='fw-semibold'>{obj.title}</h4>
                         <p>{obj.address}</p>
-                        <h6> <img className='d-inline' src={calender} alt="" />Listed 2 days ago</h6>
+                        <h6><img className='d-inline' src={calender} alt="" />Listed 2 days ago</h6>
                         <div className='col-10 d-flex   justify-content-between rounded align-items-center pt-2 mb-3'>
                             <p className='ms-3'><i class="ri-hotel-bed-fill me-2"></i>{obj.bed}bed</p>
                             <p><img className='d-inline' src={bath} alt="" />{obj.bath}bath</p>
@@ -212,4 +212,4 @@ Externally this property benefits from a front garden with a shared driveway to 
     )
 }
 
-export default PropertyDetailPage
+export default SalePropertyDetailPage

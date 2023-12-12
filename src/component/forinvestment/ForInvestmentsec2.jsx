@@ -17,7 +17,7 @@ const ForInvestmentsec2 = () => {
        
         <div className='featuredcard1' key={index}>
             <div className='featuredimg'>
-                <img onClick={()=>{navigate(`/propertyDetailPage/${index}`)}} src={value.image} alt="" />
+                <img onClick={()=>{navigate(`/investmentpropertyDetailPage/${index}`)}} src={value.image} alt="" />
                 <i class="ri-heart-line "></i>
             </div>
             <div>

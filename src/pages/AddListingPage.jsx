@@ -29,6 +29,8 @@ import ChoiceCard from "../component/AddListing/ChoiceCard";
 import CtaCards from "../component/AddListing/CtaCards"
 import Signin from "../component/Popupfile/Signin";
 import { useNavigate } from "react-router-dom";
+import Choose from "../component/Homepage/Choose";
+import { carddata } from "../component/Homepage/Carddata";
 const AddListingPage = () => {
 
   const settings = {
@@ -142,10 +144,27 @@ const AddListingPage = () => {
 
       {/* why list with us */}
       <div className="h-[672px] py-[56px] px-[100px] pb-[40px] flex flex-col gap-10 ">
-        <div className="listwithus">
-          <p>Why List with Us</p>
+      <div >
+        <h3 className='featuredtext'>Why Choose Us</h3>
+        <div className='choosecard bg-light'>
+        {carddata.map((value,index)=>(
+
+      
+            <div className='choosecard1' key={index}>
+                <div className='iconbox'><img src={value.img} alt="" /></div>
+                <div className='ms-3'>
+                    <h6>{value.name}</h6>
+                    <p>{value.para}</p>
+                </div>
+            </div>
+              ))}
+        
         </div>
-        <div className="w-[1240px] h-[480px] gap-[30px] grid grid-cols-2">
+    </div>
+        {/* <div className="listwithus">
+          <p>Why List with Us</p>
+        </div> */}
+        {/* <div className="w-[1240px] h-[480px] gap-[30px] grid grid-cols-2">
           <div className="shadow-xl">
             <ChoiceCard
               svg={hassleFree}
@@ -163,8 +182,8 @@ const AddListingPage = () => {
               height="140px"
             />
           </div>
-        </div>
-        <div className="w-[1240px] h-[480px] gap-[30px] grid grid-cols-2">
+        </div> */}
+        {/* <div className="w-[1240px] h-[480px] gap-[30px] grid grid-cols-2">
           <div className="shadow-xl">
             <ChoiceCard
               svg={costSaving}
@@ -181,8 +200,8 @@ const AddListingPage = () => {
               height="140px"
             />
           </div>
-        </div>
-        <div className="w-[1240px] h-[480px] gap-[30px] grid grid-cols-2">
+        </div> */}
+        {/* <div className="w-[1240px] h-[480px] gap-[30px] grid grid-cols-2">
           <div className="shadow-xl">
             <ChoiceCard
               svg={agentDep}
@@ -199,8 +218,11 @@ const AddListingPage = () => {
               height="140px"
             />
           </div>
-        </div>
-      </div>
+        </div> */}
+      </div> 
+ 
+ 
+      
 
       {/* how it works image */}
       <div className="h-[818px] w-[1300px] py-[40px] px-[100px] gap-[40px]">
@@ -217,7 +239,7 @@ const AddListingPage = () => {
           </div>
         </div>
 
-        <div className=" adddetails w-[1240px] h-[570px] flex justify-between ">
+        <div className=" adddetails w-[1240px] h-[570px] flex justify-between align-center ">
           <div className="w-[605px] h-[570px] gap-[40px]">
             <div className=" w-[605px] h-[480px] space-y-[20px]">
               <div>
@@ -255,7 +277,7 @@ const AddListingPage = () => {
           <div className="w-[605px] h-[570px] rounded-[20px] gap-[15px] ">
             <div className="w-[605px] h-[570px] gap-[20.63px] relative">
              
-              <iframe auto className="w-[605px] h-[570px] rounded-[18.75px]" src={HowItWorks} frameborder="0"></iframe>
+              <iframe  muted className="w-[605px] h-[570px] rounded-[18.75px]" src={HowItWorks} frameborder="0"></iframe>
               <div className="absolute top-[260px] left-[260px] w-[81.86px] h-[57.86px] rounded-[33.86px] py-4 px-6 bg-[#F9FAFB] gap-[11.29px]">
                 <div className="h-[33.86px] w-[33.86px] ">
                   <div className="ml-[6px]">{play}</div>

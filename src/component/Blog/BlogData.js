@@ -8,6 +8,16 @@ import Taxing from '../../assets/Images/Blog/Taxing.png'
 import Tenant from '../../assets/Images/Blog/Tenant.png'
 import Understand from '../../assets/Images/Blog/Understand.png'
 import Why from '../../assets/Images/Blog/Why.png'
+import profile1 from '../../assets/Images/Choosecard/profile1.webp'
+import profile2 from '../../assets/Images/Choosecard/profile2.webp'
+import profile3 from '../../assets/Images/Choosecard/profile3.webp'
+import profile4 from '../../assets/Images/Choosecard/profile4.webp'
+import profile5 from '../../assets/Images/Choosecard/profile5.jpeg'
+import profile6 from '../../assets/Images/Choosecard/profile6.webp'
+import profile7 from '../../assets/Images/Choosecard/profile7.jpeg'
+import profile8 from '../../assets/Images/Choosecard/profile8.jpeg'
+import profile9 from '../../assets/Images/Choosecard/profile9.webp'
+import profile10 from '../../assets/Images/Choosecard/profile10.jpeg'
 
 
 
@@ -30,7 +40,7 @@ export const blog = [
         heading5:"Failing to Shop Around for Mortgages",
         para5:"Don't settle for the first mortgage offer you receive. Explore different lenders to find the best interest rates and terms. Even a slight difference in rates can make a significant impact on your monthly payments over time.",
        
-        img1:"Avatar.png",
+        img1:profile1,
         name:"Ava Woods",
         date:"june 21,2021",
     },
@@ -76,7 +86,7 @@ export const blog = [
         para6:"Fractional ownership is often combined with tokenization – representing ownership through digital tokens on blockchain. This technological advancement adds transparency, security, and efficiency to the investment process, making it easier to manage and track your investments.",
         heading7:"Embrace the Future of Real Estate Investment",
         para7:"While traditional real estate investment has its merits, fractional ownership stands out as the modern, accessible, and flexible way to invest in property. With its advantages in accessibility, diversification, liquidity, and ease of management, fractional ownership offers an exciting path for individuals to embark on their real estate investment journey. So, if you're looking for an investment strategy that aligns with your financial goals and lifestyle, fractional ownership is the clear winner in this evolving landscape.",
-        img1:"Avatar3.png",
+        img1:profile2,
         name:"Bruana Marcos",
         date:"Jan 19,2022",
     },
@@ -106,8 +116,8 @@ export const blog = [
         heading10:"Trust Your Instincts",
         para10:"Above all, trust your instincts. If something doesn't feel right, it's worth further investigation. A professional home inspection can help uncover hidden issues before committing to a purchase.", 
         img1:"Avatar3.png",
-        name:"Bruana Marcos",
-        date:"March 19,2021",
+        name:"Kendra Mars",
+        date:"Aug 11,2023",
     },
     {
         img: Sealed,
@@ -132,9 +142,9 @@ export const blog = [
         para8:"Property fraud is a growing concern. Taking steps to protect your property from fraudulent activities, such as title fraud or mortgage fraud, is essential. The UK Land Registry offers various safeguards to prevent these occurrences.",
         heading9:"Seek Professional Guidance",
         para9:"Real estate law in the UK is multifaceted and ever-evolving. To navigate it confidently, consider seeking advice from a legal professional with expertise in property law. Having the right support ensures that your real estate journey is not only successful but also legally sound.",
-        img1:"Avatar3.png",
-        name:"Bruana Marcos",
-        date:"Jan 19,2023",
+        img1:profile3,
+        name:"Romero Brando",
+        date:"Jun 21,2021",
     },
     {
         img: Sold,
@@ -157,8 +167,8 @@ export const blog = [
         para7:"Linked Bricks isn't just a platform; it's your partner in achieving a successful home sale. With our resources, support, and user-friendly interface, you're equipped with the tools needed to navigate the complex world of real estate and emerge victorious.",
         heading8:"Ready to Sell Like a Pro?",
         para8:"Selling your home doesn't have to be a daunting task. With Linked Bricks, you're tapping into a powerful platform that empowers you to showcase your property's best features, reach a wide audience, and communicate directly with potential buyers. From crafting compelling listings to coordinating viewings, Linked Bricks is your comprehensive solution to selling your home like a true professional. Get ready to embark on a successful home-selling journey that leads to a satisfying Sold! announcement.",
-        img1:"Avatar3.png",
-        name:"Bruana Marcos",
+        img1:profile4,
+        name:"Onochie Obodoh",
         date:"Jan 19,2023",
     },
     {
@@ -178,8 +188,8 @@ export const blog = [
         para5:"If you're buying property in Scotland or Wales, you'll encounter their respective transaction taxes. Similar to SDLT, these taxes vary based on property value and circumstances.",   
         heading6:"Seeking Professional Advice",
         para6:"Property tax laws can be complex and subject to change. To ensure you're making informed decisions, consider consulting a tax professional or financial advisor. Their expertise can help you minimize tax liabilities while staying compliant with regulations.",  
-        img1:"Avatar3.png",
-        name:"Bruana Marcos",
+        img1:profile5,
+        name:"Guy Hakkins",
         date:"Jan 19,2023",
     },
     {
@@ -209,7 +219,7 @@ export const blog = [
         para10:"As a landlord, your intuition matters. If something about an applicant doesn't feel right, trust your instincts. A thorough tenant screening process goes beyond the numbers and paperwork – it's about finding a tenant who aligns with your property's values and your expectations",
         heading11:"A Well-Informed Decision",
         para11:"Tenant screening is your safeguard against potential issues down the line. By identifying these red flags, you can make well-informed decisions that lead to a positive and mutually beneficial landlord-tenant relationship. Remember, a comprehensive screening process is an investment in the long-term success of your rental property.",
-        img1:"Avatar3.png",
+        img1:profile6,
         name:"Bruana Marcos",
         date:"Jan 19,2023",
     },
@@ -230,9 +240,9 @@ export const blog = [
         para5:"Fractional ownership and tokenization are redefining how people engage with real estate investment. These concepts cater to investors with various budgets and offer flexibility and convenience that traditional ownership models lack.",
         heading6:"Conclusion: A New Era of Real Estate Investment ",
         para6:"As fractional ownership and tokenization gain momentum, they're reshaping the real estate landscape. These innovative approaches empower a broader range of investors, allowing them to participate in the property market like never before. Whether you're a seasoned investor or someone exploring new investment avenues, fractional ownership and tokenization offer an exciting path towards property ownership and financial growth. Welcome to the future of real estate investment.",
-        img1:"Avatar3.png",
-        name:"Bruana Marcos",
-        date:"Jan 19,2023",
+        img1:profile7,
+        name:"Jeremih Perkins",
+        date:"Jan 19,2021",
     },
     {
         img: Why,
@@ -251,8 +261,8 @@ export const blog = [
         para5:"We believe that the best decisions are made when you have choices. Linked Bricks offers a diverse range of property listings, catering to various preferences and budgets. Whether you're looking for a cozy apartment, a spacious villa, or a commercial space, our platform has something for everyone",
         heading6:"Your Property Journey, Your Way",
         para6:"Linked Bricks is more than just a platform; it's a pathway to finding your perfect property on your terms. By choosing us, you're opting for a smoother, more direct, and more transparent property search experience. So, whether you're a landlord looking to list your property hassle-free or a buyer/tenant in search of your next home, Linked Bricks is your trusted partner on this exciting journey. Experience the freedom of choice and the power of direct connections – all in one place. Welcome to a new era of property listings. Welcome to Linked Bricks.",
-        img1:"Avatar3.png",
+        img1:profile8,
         name:"Bruana Marcos",
-        date:"Jan 19,2023",
+        date:"March 19,2023",
     },
 ]

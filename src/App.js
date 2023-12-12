@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./component/Homepage/Navbar";
-
+import Animation from "./component/Homepage/Animation";
 import Footer from "./component/Homepage/Footer";
 import { Route, Routes } from "react-router-dom";
 import Homepage from "./pages/Homepage";
@@ -21,6 +21,8 @@ import TermsOfUse from "./pages/TermsOfUse";
 import DashboardPage from "./component/dashboard/DashboardPage";
 import ListingSteps from "./pages/ListingForms/ListingSteps";
 import ReviewPage from "./component/review/ReviewPage";
+import SalePropertyDetailPage from "./component/forsale/SalePropertyDetailPage";
+import InvestmentPropertyDetailPage from "./component/forinvestment/InvestmentPropertyDetailPage";
 
 const App = () => {
   return (
@@ -35,6 +37,8 @@ const App = () => {
         <Route path="/forinvestment" element={<ForInvestment />} />
         <Route path="/searchforsale" element={<SearchForSale />} />
         <Route path="/propertyDetailPage/:id" element={<PropertyDetailPage />} />
+        <Route path="/salepropertyDetailPage/:id" element={<SalePropertyDetailPage />} />
+        <Route path="/investmentpropertyDetailPage/:id" element={<InvestmentPropertyDetailPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/addlisting" element={<AddListingPage />} />
         <Route path="/contact" element={<ContactUs />} />
@@ -43,6 +47,7 @@ const App = () => {
         <Route path="/termsofuse" element={<TermsOfUse />} />
         <Route path="/add-listing-steps" element={<ListingSteps />} />
         <Route path="/reviewpage" element={<ReviewPage/>} />
+        <Route path="/animation" element={<Animation/>} />
 
         <Route path="/dashboard/*" element={<DashboardPage />} />
       </Routes>

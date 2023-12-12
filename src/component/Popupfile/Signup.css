@@ -5,6 +5,7 @@
     position: relative;
     margin-top: 6.5vmax;
     transform: translateX(15vmax);
+    z-index: 999;
 }
 .signclose{
     position: absolute;

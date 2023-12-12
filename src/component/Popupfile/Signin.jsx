@@ -1,42 +1,4 @@
-// import React from 'react'
-// import "./Signin.css"
 
-// const Signin = () => {
-//   return (
-//     <div>
-//         <div className='sinmain'>
-//         <i class="signclose ri-close-circle-line"></i>
-//             <div className='signflex'>
-//                 <div className='signone'>
-//                     <img src="LOGO.png" alt="" />
-
-//                 </div>
-//                 <div className='signtwo'>
-//                     <h5 >Welcome to Linked Bricks. <br/> Sign in to enjoy much more</h5>
-//                     <h6>No account?  <span> Sign up</span></h6>
-//                     <input type="text" placeholder='Email' />
-//                     <input className='mt-4' type="text" placeholder='Password' />
-//                     <i class="ri-eye-off-fill"></i>
-//                     <p>Forgot Password?</p>
-//                     <button>Continue</button>
-//                     <h4>or sign in with</h4>
-//                     <div className='signicon'>
-//                     <i class="ri-google-fill "></i>
-//                     <i class="ri-facebook-fill ms-5"></i>
-//                     </div>
-
-
-
-
-//                 </div>
-
-//             </div>
-//         </div>
-//     </div>
-//   )
-// }
-
-// export default Signin
 
 
 

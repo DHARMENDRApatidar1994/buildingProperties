@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Forrent.css'
 import { rent } from './RentData'
 import { useNavigate } from 'react-router-dom'
+import bathhub from '../../assets/Images/property/bathub.png'
 
 const ForRentsec1 = () => {
     const navigate = useNavigate()
@@ -176,13 +177,13 @@ const ForRentsec1 = () => {
                             <i class="ri-heart-line "></i>
                         </div>
                         <div>
-                                <h4><i class="ri-money-pound-circle-fill"></i>{value.price} pcm</h4>
+                                <h4>£{value.price} pcm</h4>
                                 
                             <h5>{value.title}</h5>
                             <p>{value.address}</p>
                             <div className='featuredblack'>
                                 <p><i class="ri-hotel-bed-fill me-2"></i>{value.bed}</p>
-                                <p><img src="bathub.png" alt="" />{value.bath}</p>
+                                <p><img src={bathhub} alt="" />{value.bath}</p>
                                 <p><i class="ri-sofa-fill me-2"></i>{value.furniture}</p>
                             </div>
                         </div>

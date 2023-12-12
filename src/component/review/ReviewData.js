@@ -1,12 +1,23 @@
+import profile1 from '../../assets/Images/Choosecard/profile1.webp'
+import profile2 from '../../assets/Images/Choosecard/profile2.webp'
+import profile3 from '../../assets/Images/Choosecard/profile3.webp'
+import profile4 from '../../assets/Images/Choosecard/profile4.webp'
+import profile5 from '../../assets/Images/Choosecard/profile5.jpeg'
+import profile6 from '../../assets/Images/Choosecard/profile6.webp'
+import profile7 from '../../assets/Images/Choosecard/profile7.jpeg'
+import profile8 from '../../assets/Images/Choosecard/profile8.jpeg'
+import profile9 from '../../assets/Images/Choosecard/profile9.webp'
+import profile10 from '../../assets/Images/Choosecard/profile10.jpeg'
+
 export const review = [
     {
-        img:"Avatar3.png",
+        img:profile1,
         name:"James Haller.",
         date:"Jun 21,2019",
         para:"Linked Bricks understands my investment needs. With small entry points, high liquidity, and a transparent process, instills confidence in every investment decision. Highly recommended!",
     },
     {
-        img:"Avatar.png",
+        img: profile2,
         name:"Brad Anthony",
         date:"March 21,2021",
         shortpara:"Investing in property in London through Linked Bricks was a decision that changed the game for ",
@@ -34,56 +45,56 @@ export const review = [
         para:"Linked Bricks made my investment journey in LA a captivating story. From the initial step into the market to the remarkable returns, every page turned with Linked Bricks felt like a strategic move towards financial success.",
     },
     {
-        img:"Avatar2.png",
+        img:profile3,
         name:"Liam Green",
         date:"Nov 10,2022",
         shortpara:"The high returns transformed my simple investment into a thrilling story of financial growth.",
         para:"The high returns transformed my simple investment into a thrilling story of financial growth.",
     },
     {
-        img:"Avatar3.png",
+        img:profile4,
         name:"Isabella Smith",
         date:"May 21,2023",
         shortpara:"The decision to invest in Dubai through this platform added a layer of excitement and substantial ",
         para:"The decision to invest in Dubai through this platform added a layer of excitement and substantial returns that transformed my narrative",
     },
     {
-        img:"Avatar.png",
+        img:profile5,
         name:"Emmanuel Henry",
         date:"May 18,2022",
         shortpara:"Linked Bricks empowered me to sell my home directly, avoiding heavy commissions. The transparent ",
         para:"Linked Bricks empowered me to sell my home directly, avoiding heavy commissions. The transparent process and control over the sale were game-changers. Selling a home has never been this easy!",
     },
     {
-        img:"Avatar2.png",
+        img:profile6,
         name:"Zayn Ansari",
         date:"July 08,2023",
         shortpara:"Navigating the platform, I found a property in the exact neighborhood I'd been longing for. ",
         para:"Navigating the platform, I found a property in the exact neighborhood I'd been longing for. Linked Bricks didn't just help me buy a house; it made me a part of a community I now proudly call home.",
     },
     {
-        img:"Avatar3.png",
+        img:profile7,
         name:"Ryan Evans",
         date:"Dec 21,2021",
         shortpara:"The platform revealed an amazing property in Oxfordshire that I now proudly own. Linked Bricks  ",
         para:"The platform revealed an amazing property in Oxfordshire that I now proudly own. Linked Bricks turned a mere search into a tangible moment of finding a place that truly feels like home.",
     },
     {
-        img:"Avatar3.png",
+        img:profile8,
         name:"Rebecca Brown",
         date:"May 21,2020",
         shortpara:"Looking back, I recall the excitement of finding my ideal property in London with Linked Bricks. The platform ",
         para:"Looking back, I recall the excitement of finding my ideal property in London with Linked Bricks. The platform showcased a range of homes, and I eventually sealed the deal on a house that perfectly matched my vision. Linked Bricks made my London property dreams a reality.",
     },
     {
-        img:"Avatar3.png",
+        img:profile9,
         name:"Liam Wright",
         date:"Aug 05,2021",
         shortpara:"My move to a new city was met with unexpected ease, thanks to Linked Bricks. I found the perfect ",
         para:"My move to a new city was met with unexpected ease, thanks to Linked Bricks. I found the perfect rental property on the same day I started my search. The platform's efficiency turned what could have been a stressful move into a seamless transition. ",
     },
     {
-        img:"Avatar3.png",
+        img:profile10,
         name:"Ruchi Patel",
         date:"Jun 21,2021",
         shortpara:"Linked Bricks played a crucial role in my last-minute move. In a single day, I discovered and  ",

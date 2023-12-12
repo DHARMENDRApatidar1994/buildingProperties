@@ -6,6 +6,7 @@ import Blog from '../component/Homepage/BlogPart'
 import Properties from '../component/Homepage/Properties'
 import CustomerReview from '../component/Homepage/CustomerReview'
 import About from './About'
+import { Link } from 'react-router-dom'
 
 
 const Homepage = () => {
@@ -17,7 +18,7 @@ const Homepage = () => {
      <Blog/>
      <Properties/>
      <CustomerReview/>
-     
+     <Link to='/animation'>Animation</Link>
     </div>
   )
 }

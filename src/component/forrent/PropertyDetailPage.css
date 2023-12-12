@@ -1,6 +1,7 @@
 
 .propertydetail{
     padding-top: 7vmax;
+    font-family: 'Kanit', sans-serif;
 }
 .propertydetail .heading{
     width: 17%;
@@ -22,9 +23,10 @@
 }
 .propertydetail .propertyimage .firstimage{
     width: 52%;
-    height: 27vmax;
+    height: 26vmax;
     margin-top: 1vmax;
     margin-left: 2vmax;
+    border-radius: 1vmax;
 }
 .propertydetail .propertyimage .fiveimage{
     width: 10%;
@@ -33,7 +35,7 @@
 }
 .propertydetail .propertyimage .fiveimage img{
     width: 70%;
-    margin-top: 1vmax;
+    margin-top: 0.8vmax;
     border-radius: 0.7vmax;
 }
 .propertydetail .propertyimage .propertyinfo{
@@ -57,19 +59,19 @@
     color:#01b8c6;
 }
 .propertyinfo .call{
-    width: 30%;
+    width: 40%;
     border: 1px solid yellow;
     border-radius: 0.5vmax;
-    padding: 2px 15px;
+    padding: 6px 15px;
     background-color: white;
    
 }
 .propertyinfo .message{
-    width: 30%;
+    width: 40%;
     background-color: #f7b501;
     border: none;
     border-radius: 0.5vmax;
-    padding: 2px 15px;
+    padding: 6px 15px;
     margin-left: 2vmax;
 }
 .property-description{

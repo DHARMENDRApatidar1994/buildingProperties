@@ -2,6 +2,7 @@ import React from 'react'
 import { investment } from '../forinvestment/InvestmentData'
 import { rent } from '../forrent/RentData'
 import { sale } from '../forsale/SaleData'
+import bathhub from '../../assets/Images/property/bathub.png'
 
 
 const Featured = () => {
@@ -27,7 +28,7 @@ const Featured = () => {
     <p>{value.address}</p>
     <div className='featuredblack'>
       <p><i class="ri-hotel-bed-fill me-2"></i>{value.bed}</p>
-      <p><img src="bathub.png" alt="" />{value.bath} bath</p>
+      <p><img src={bathhub} alt="" />{value.bath} bath</p>
       <p><i class="ri-sofa-fill me-2"></i>{value.furniture}</p>
     </div>
 </div> 
@@ -49,7 +50,7 @@ const Featured = () => {
     <p>{value.address}</p>
     <div className='featuredblack'>
       <p><i class="ri-hotel-bed-fill me-2"></i>{value.bed}</p>
-      <p><img src="bathub.png" alt="" />{value.bath} bath</p>
+      <p><img src={bathhub} alt="" />{value.bath} bath</p>
       <p><i class="ri-sofa-fill me-2"></i>{value.furniture}</p>
     </div>
 </div> 
@@ -71,7 +72,7 @@ const Featured = () => {
                 <p>{value.address}</p>
                 <div className='featuredblack'>
                   <p><i class="ri-hotel-bed-fill me-2"></i>{value.bed}</p>
-                  <p><img src="bathub.png" alt="" />{value.bath} bath</p>
+                  <p><img src={bathhub} alt="" />{value.bath} bath</p>
                   <p><i class="ri-sofa-fill me-2"></i>{value.furniture}</p>
                 </div>
             </div> 

@@ -5,7 +5,7 @@ const Forrentsec3 = () => {
     <div>
         <div className='forrentsignin'>
             <h3>Sign in to enjoy much more</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quaerat laudantium est, ea qui adipisci nulla doloremque illo. Obcaecati eligendi labore harum eum id, consequatur vel neque laboriosam impedit pariatur.</p>
+            <p>Tired of endless tabs cluttering your browser while you search for your ideal property? We've got the solution for you! Say farewell to the tab chaos and hello to organization with our cutting-edge platform.</p>
             <button>+ sign in</button>
         </div>
     </div>

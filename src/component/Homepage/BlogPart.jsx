@@ -15,7 +15,7 @@ const BlogPart = () => {
 
             <img  onClick={()=>{navigate(`/BlogDetailPage/${index}`)}} src={value.img} alt="" />
             <h4>{value.title}</h4>
-            <p>{value.shortdesc}</p>
+            <p>{value.shortdesc} <span className='text-primary ' style={{cursor:"pointer"}} onClick={()=>{navigate(`/BlogDetailPage/${index}`)}}>Read-more</span></p>
             <div className='hakkies d-flex  align-items-center'>
               <img className='rounded-circle' src={value.img1} alt="" />
               <div className='ms-3 mt-3'>

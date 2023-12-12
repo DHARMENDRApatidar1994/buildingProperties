@@ -5,6 +5,8 @@ import MyProfile from "./my_accountPages/MyProfile";
 import ReadMessage from "./message/MyMessage";
 
 function DashboardPage() {
+
+ 
   return (
     <div>
       <div className="d-flex flex-lg-row flex-md-row flex-column-reverse mb-lg-0 mb-5">
@@ -73,7 +75,7 @@ function DashboardPage() {
           </div>
           <div className="d-flex align-items-center">
             <img className="me-3 ms-3" src="signout.png" alt="" />
-            <p className="col-8 mt-3">Sign out</p>
+            <p onClick={onSignInClick} className="col-8 mt-3">Sign out</p>
             <span></span>
           </div>
           <div className="d-flex align-items-center">
