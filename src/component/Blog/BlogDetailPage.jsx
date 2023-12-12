@@ -15,7 +15,7 @@ const BlogDetailPage = () => {
         <div className='detailpage container'>
         <h6 className='bg-dark col-lg-5 col-12 p-2 mt-4 mb-3 px-3 rounded text-light'>Home/Blog/<span style={{color:"#01b8c6"}}>{obj.title}</span></h6>
         <div className='rounded-overlay'>
-            <img className='rounded'  src='Blogimg1.jpg' alt="" />
+            <img className='rounded'  src={obj.img} alt="" />
             <div className='blogdetailpage-icon'>
                                     <i class="ri-facebook-fill"></i>
                                     <i class="ri-whatsapp-line"></i>
@@ -26,9 +26,16 @@ const BlogDetailPage = () => {
             </div>
             <h4>{obj.title}</h4>
        <p>{obj.desc}</p>
-       <h5>Best-Selling Properties in the UK</h5>
-       <p>{obj.para}</p>
+       <h5>{obj.heading1}</h5>
        <p>{obj.para1}</p>
+       <h5>{obj.heading2}</h5>
+       <p>{obj.para2}</p>
+       <h5>{obj.heading3}</h5>
+       <p>{obj.para3}</p>
+       <h5>{obj.heading4}</h5>
+       <p>{obj.para4}</p>
+       <h5>{obj.heading5}</h5>
+       <p>{obj.para5}</p>
        <div className='tags'>
         <h5>Tags:</h5>
         <li>Selling</li>

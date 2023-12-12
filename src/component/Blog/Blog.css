@@ -1,35 +1,36 @@
 .blogsec1{
     width: 100%;
-    height: 20vmax;
     display: flex;
     justify-content: space-between;
     background-color: #ebfffd;
-    padding-top: 5.4vmax;
+    padding-top: 5.2vmax;
    }
 .blogsec1-left{
-    width: 40%;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 8.5vmax;
     
 }
 .blogsec1-left h6{
-    width: 29%;
+   
     background-color: black;
     color: white;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 40px;
+    display: inline-block;
+    margin-top: 1vmax;
 }
 .blogsec1-left h6 span{
     color: #01b8c6;
 }
 .blogsec1-left h2{
-    margin-bottom: 20px;
+    font-size: 3.5vmax;
 }
 .blogsec1-left p{
-    font-weight: 600;
-    font-size: 18px;
+    font-size: 1.4vmax;
 }
 .fbloginput {
     width: 30%;
@@ -40,13 +41,16 @@
     align-items: center;
     border-radius: 0.5vmax;
     margin-top: -22px;
-    margin-left: 25px;
+    margin-left: 8.5vmax;
    
     
   }
+  .blogimg{
+    height: 19.9vmax;
+  }
   
   .fbloginput input {
-    width: 45%;
+    width: 55%;
     padding: 0.6vmax;
     border: 1px solid rgb(255, 208, 0);
     font-size: 1vmax;
@@ -57,7 +61,7 @@
   
   .fbloginput button {
     background-color: rgb(247, 181, 1);
-    padding: 0.6vmax 1vmax;
+    padding: 0.6vmax 1.5vmax;
     border: none;
     border-radius: 0.5vmax;
     margin-left: 1vmax;
@@ -261,14 +265,16 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-bottom: 160px;
+    /* background-color: red; */
 }
 .recentblog1{
     width: 40%;
     display: flex;
     align-items: center;
+    /* background-color: blue; */
 }
 .recentblog1 img{
-    width: 20%;
+    width: 40%;
     height: 7vmax;
     margin-right: 2vmax;
 }

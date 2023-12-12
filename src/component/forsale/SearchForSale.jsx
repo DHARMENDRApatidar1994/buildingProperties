@@ -1,16 +1,17 @@
 import React from 'react'
 import { sale } from './SaleData'
 import './SearchForSale.css'
+import location from '../../assets/Images/property/.png'
 
 const SearchForSale = () => {
     return (
-        <div>
+        <div style={{paddingTop:"7vmax"}}>
 
             <div className='searchsec1'>
                 <h6>Home/Search/<span>For Rent</span></h6>
             </div>
             <div className='searchsec2'>
-                <img src="https://images.pexels.com/photos/269790/pexels-photo-269790.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
+                <img src={location} alt="" />
             </div>
 
             <div className='searchinput '>

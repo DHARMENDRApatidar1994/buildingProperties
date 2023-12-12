@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import Signin from '../Popupfile/Signin';
-import maillogo from '../../assets/Images/navimage/maillogo.png'
+import maillogo from '../../assets/Images/navimage/hdlogo.svg'
 import Homepounds from '../../assets/Images/navimage/Home pounds.png'
 
 const Navbar = () => {
@@ -48,20 +48,24 @@ const Navbar = () => {
                
                 {isUserSignedIn ? (
             
-                  <h6 onClick={() => handleSign('signin')}>Sign in</h6>
-          ) : (
-            <h6 >Account</h6>
+                  <h6 >Account</h6>
+                  ) : (
+            <h6 onClick={() => handleSign('signin')}>Sign in</h6>
           )}
                 <Link className='text-decoration-none text-dark' to="/addlisting"><button className='border border-none rounded fw-semibold d-flex' style={{backgroundColor:"#e8ae00"}}><img src="Home pounds.png"/>Add Listing</button></Link>
             </div>
         )}
-            <div className='col-lg-6 col-md-8 d-lg-flex d-none  d-lg-initial justify-content-evenly align-items-center'>
-                <Link  style={{textDecoration:"none",color:"black"}} to="/" ><h5 style={{ cursor: 'pointer', backgroundColor: activeItem === 'home' ? 'transparent' : '#ebfffd',padding:"6px",borderRadius:"10px",fontWeight:"400" }} onClick={() => handleItemClick('home')}><img className='mb-1' style={{display:"inline"}} src="home.png" alt="" /> Home</h5></Link>
-                <Link  style={{textDecoration:"none",color:"black"}}  to='/forsale'><h5 style={{ cursor: 'pointer', backgroundColor: activeItem === 'forsale' ? '#ebfffd' : 'transparent',padding:"6px",borderRadius:"10px",fontWeight:"400"  }} onClick={() => handleItemClick('forsale')}>For Sale</h5></Link> 
-                <Link  style={{textDecoration:"none",color:"black"}}  to='/forrent'><h5 style={{ cursor: 'pointer', backgroundColor: activeItem === 'forrent' ? '#ebfffd' : 'transparent',padding:"6px",borderRadius:"10px",fontWeight:"400"  }} onClick={() => handleItemClick('forrent')}>For rent</h5></Link> 
-                <Link  style={{textDecoration:"none",color:"black"}}  to='/forinvestment'><h5 style={{ cursor: 'pointer', backgroundColor: activeItem === 'forinvestment' ? '#ebfffd' : 'transparent',padding:"6px",borderRadius:"10px",fontWeight:"400"  }} onClick={() => handleItemClick('forinvestment')}>For investment</h5></Link> 
-                <Link  style={{textDecoration:"none",color:"black"}}  to='/blog'><h5 style={{ cursor: 'pointer', backgroundColor: activeItem === 'blog' ? '#ebfffd' : 'transparent',padding:"6px",borderRadius:"10px",fontWeight:"400"  }} onClick={() => handleItemClick('blog')}>Blog</h5></Link>
-                <h5  style={{ cursor: 'pointer', backgroundColor: activeItem === 'signin' ? '#ebfffd' : 'transparent',padding:"6px",borderRadius:"10px",fontWeight:"400"  }} onClick={() => handleSign('signin')}>Sign in</h5>
+            <div  className='cursorHover col-lg-6 col-md-8 d-lg-flex d-none  d-lg-initial justify-content-evenly align-items-center'>
+                <Link className='hoverLink'  style={{textDecoration:"none"}} to="/" ><h5 style={{  backgroundColor: activeItem === 'home' ? '#e8ae00' : 'transparent' }} onClick={() => handleItemClick('home')}><img className='mb-1' style={{display:"inline"}} src="home.png" alt="" /> Home</h5></Link>
+                <Link className='hoverLink' style={{textDecoration:"none"}}  to='/forsale'><h5 style={{  backgroundColor: activeItem === 'forsale' ? '#e8ae00' : 'transparent'  }} onClick={() => handleItemClick('forsale')}>For Sale</h5></Link> 
+                <Link className='hoverLink' style={{textDecoration:"none"}}  to='/forrent'><h5 style={{backgroundColor: activeItem === 'forrent' ? '#e8ae00' : 'transparent'  }} onClick={() => handleItemClick('forrent')}>For rent</h5></Link> 
+                <Link className='hoverLink'  style={{textDecoration:"none"}}  to='/forinvestment'><h5 style={{  backgroundColor: activeItem === 'forinvestment' ? '#e8ae00' : 'transparent'  }} onClick={() => handleItemClick('forinvestment')}>For investment</h5></Link> 
+                <Link className='hoverLink'  style={{textDecoration:"none"}}  to='/blog'><h5 style={{  backgroundColor: activeItem === 'blog' ? '#e8ae00' : 'transparent'  }} onClick={() => handleItemClick('blog')}>Blog</h5></Link>
+                {isUserSignedIn ? (
+                   <h6 >Account</h6>
+                  ) : (
+                 <Link className='hoverLink' style={{textDecoration:"none"}} > <h5   style={{  backgroundColor: activeItem === 'signin' ? '#e8ae00' : 'transparent' }} onClick={() => handleSign('signin')}>Sign in</h5></Link>
+                )}
             </div>
             <div>
                 <Link className='text-decoration-none text-dark' to="/addlisting"><button className='border border-none rounded fw-semibold p-2  d-none d-lg-flex' style={{backgroundColor:"#e8ae00"}}><img src={Homepounds}/>Add Listing</button></Link>

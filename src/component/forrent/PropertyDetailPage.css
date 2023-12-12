@@ -1,4 +1,7 @@
 
+.propertydetail{
+    padding-top: 7vmax;
+}
 .propertydetail .heading{
     width: 17%;
    background-color: black;
@@ -7,7 +10,8 @@
    padding: 0.8vmax;
    font-size: 1.4vmax;
    margin-left: 2vmax;
-   margin-top: 2vmax;
+
+   
 
 }
 .propertydetail .propertyimage{

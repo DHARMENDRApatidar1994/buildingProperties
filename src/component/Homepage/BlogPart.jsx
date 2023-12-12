@@ -8,14 +8,14 @@ const BlogPart = () => {
     <div style={{overflowX:"hidden"}}>
       <h3 className='featuredtext'>Blog</h3>
       <div className='scroll-animation '>
-        {blog.map((value, index) => (
+        {blog.slice(1,9).map((value, index) => (
 
 
           <div className='blogcard1' key={index}>
 
             <img  onClick={()=>{navigate(`/BlogDetailPage/${index}`)}} src={value.img} alt="" />
             <h4>{value.title}</h4>
-            <p>{value.para}</p>
+            <p>{value.shortdesc}</p>
             <div className='hakkies d-flex  align-items-center'>
               <img className='rounded-circle' src={value.img1} alt="" />
               <div className='ms-3 mt-3'>

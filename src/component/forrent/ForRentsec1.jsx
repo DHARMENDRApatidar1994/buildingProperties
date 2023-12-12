@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import './Forrent.css'
 import { rent } from './RentData'
+import { useNavigate } from 'react-router-dom'
 
 const ForRentsec1 = () => {
+    const navigate = useNavigate()
   const [isFilterOpen,setIsFilterOpen] = useState(false)
 
   return (
@@ -170,7 +172,7 @@ const ForRentsec1 = () => {
 
                     <div className='featuredcard1 ' key={index}>
                         <div className='featuredimg'>
-                            <img src={value.image} alt="" />
+                            <img onClick={()=>{navigate(`/propertyDetailPage/${index}`)}} src={value.image} alt="" />
                             <i class="ri-heart-line "></i>
                         </div>
                         <div>

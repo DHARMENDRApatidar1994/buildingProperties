@@ -15,8 +15,8 @@
  
   
    .BoxReview{
-    width: 40%;
-    height: 170px;
+    width: 45%;
+    height: 220px;
     display: flex;
     flex-direction: column;
     background-color: rgb(249, 249, 249);

@@ -15,8 +15,8 @@ const Blogsec2 = () => {
        <img  onClick={()=>{navigate(`/BlogDetailPage/${index}`)}} src={value.img} alt="" />
        <div className='blogsec2-right'>
        <h4>{value.title}</h4>
-       <p>{value.desc}</p>
-       <p>{value.para}</p>
+       <p>{value.shortdesc}</p>
+       {/* <p>{value.para}</p> */}
        <div className='hakkies d-flex  align-items-center'>
         <img className='rounded-circle' src="Avatar.png" alt="" />
         <div className='ms-3 mt-3'>

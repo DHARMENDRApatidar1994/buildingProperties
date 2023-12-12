@@ -6,7 +6,7 @@ const ListingButtons = ({open, setOpen}) => {
   const [isSignUpOpen, setSignUpOpen] = useState(false);
   return (
     <>
-    <div className="bg-white flex items-center w-[645px] h-[82px] space-x-4 rounded-xl p-4  shadow-xl">
+    <div className="bg-white flex items-center w-[643px] h-[82px] space-x-2 rounded-xl p-4  shadow-xl">
       <FeatureButton
         svg={
           <svg
@@ -24,7 +24,7 @@ const ListingButtons = ({open, setOpen}) => {
           </svg>
         }
         featureText="Sell Property"
-        exstyle="w-[174px] bg-[#E8AE00]"
+        exstyle="w-[186px] bg-[#E8AE00]"
       />
 
       <FeatureButton
@@ -45,7 +45,7 @@ const ListingButtons = ({open, setOpen}) => {
           </svg>
         }
         featureText="Rent Property"
-        exstyle="w-[181px] bg-[#E8AE00]"
+        exstyle="w-[188px] bg-[#E8AE00]"
         onClick={()=>setOpen(true)}/>
 
       <FeatureButton

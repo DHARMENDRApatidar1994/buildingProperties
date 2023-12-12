@@ -72,8 +72,8 @@ export default function Signin({ open, setOpen,onSignInClick}) {
                         <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
                     </Transition.Child>
 
-                    <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
-                        <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                    <div className="fixed inset-0 z-10 ">
+                        <div className="">
                             <Transition.Child
                                 as={Fragment}
                                 enter="ease-out duration-300"
@@ -83,7 +83,7 @@ export default function Signin({ open, setOpen,onSignInClick}) {
                                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                                 leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                             >
-                                <Dialog.Panel className="w-[1164px] h-[664px] relative transform overflow-hidden rounded-lg bg-white ">
+                                <Dialog.Panel className="  ">
                                     <div className='sinmain'>
                                         <i onClick={() => setOpen(false)} className="signclose ri-close-circle-line"></i>
                                         <div className='signflex'>
@@ -94,15 +94,15 @@ export default function Signin({ open, setOpen,onSignInClick}) {
                                             <div className='signtwo'>
                                                 <h5 >Welcome to Linked Bricks. <br /> Sign in to enjoy much more</h5>
                                                 <h6>No account?  <span onClick={() => setSignUpOpen(true)}> Sign up</span></h6>
-                                                <input className='ms-4' type="text" placeholder='Email' />
-                                                <input className='mt-4' type="text" placeholder='Password' />
+                                                <input className='' type="text" placeholder='Email' />
+                                                <input className='mt-2' type="text" placeholder='Password' />
                                                 <i class="ri-eye-off-fill"></i>
                                                 <p>Forgot Password?</p>
-                                                <Link onClick={onSignInClick} to='/dashboard'><button >Continue</button></Link>
+                                                <Link className='text-dark' onClick={onSignInClick} to='/dashboard'><button >Continue</button></Link>
                                                 <h4>or sign in with</h4>
                                                 <div className='signicon'>
                                                     <i class="ri-google-fill "></i>
-                                                    <i class="ri-facebook-fill ms-5"></i>
+                                                    <i class="ri-facebook-fill ms-2"></i>
                                                 </div>
 
 

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import CustomerReview from '../component/Homepage/CustomerReview'
+import './AddListing.css'
 import FeatureButton from "../component/AddListing/FeatureButton"
 import {
   hassleFree,
@@ -20,7 +22,8 @@ import {
 // import heroImg1 from "../assets/Images/AddListing/avatar.png";
 import ListingButtons from "../component/AddListing/ListingButtons";
 import heroImg1 from "../assets/Images/AddListing/ctc.jpeg";
-import HowItWorks from "../assets/Images/AddListing/how.jpeg";
+import HowItWorks from "../assets/Images/AddListing/Linked Bricks - Intro .mp4";
+// src\assets\Images\AddListing\Linked Bricks - Intro .mp4
 import ReviewCard from "../component/AddListing/ReviewCard";
 import ChoiceCard from "../component/AddListing/ChoiceCard";
 import CtaCards from "../component/AddListing/CtaCards"
@@ -43,33 +46,31 @@ const AddListingPage = () => {
       {/* nav */}
 
       {/* carousel */}
-      <div className="h-[582px] w-[1440px] rounded-b-3xl pt-5 relative">
+      <div className="">
         <div>
-          <Slider {...settings}>
-            <div className="relative h-[528px] ">
-              <img
-                src={heroImg1}
-                alt=""
-                className="w-full h-full object-cover rounded-b-xl"
-              />
-              <div className="absolute top-0  left-0  w-[898px] h-[442px] bg-black opacity-[40%] filter blur-[60px]"></div>
-              <div className="absolute bottom-28 left-20  w-[720px] h-[267px] gap-[20px]  ">
-                <div className="w-[720px] h-[176px] text-white text-left opacity-[100%] font-extrabold text-7xl leading-[88px]  z-10">
-                  Sell, Let and <br />
+          {/* <Slider {...settings}> */}
+            <div className="mainoverlaydiv ">
+              <div className="Addlisting-overlay">
+              <img src={heroImg1} alt="" className="overlayimg" />
+              </div>
+             
+              <div className="textbox  ">
+                <div className="selltext">
+                  Sell, Let and 
                   Invest in a Property
                 </div>
-                <div className="mt-5 w-[692px]  h-[71px] font-semibold text-3xl text-white leading-[35.2px] z-10">
+                <div className="confidentialy">
                   Confidently sell, invest in a property or effortlessly find
                   the perfect tenant by listing with us.
                 </div>
               </div>
             </div>
-          </Slider>
+          {/* </Slider> */}
         </div>
         {/* buttons */}
-        <div className="absolute bottom-[12px] left-24">
+        <div className="">
           {/* <ListingButtons open={open} setOpe={setOpen} /> */}
-          <div className="bg-white flex items-center w-[645px] h-[82px] space-x-4 rounded-xl p-4  shadow-xl">
+          <div className="featurebuttonaddlisting">
             <FeatureButton
               svg={
                 <svg
@@ -78,7 +79,7 @@ const AddListingPage = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="mr-2"
+                  className="sellproperty"
                 >
                   <path
                     d="M20.0003 13.08V18C20.0003 20 19.0003 21 17.0003 21H14.3303C14.1643 21 14.0304 20.866 14.0304 20.7V17.622C14.0304 16.625 13.3553 15.695 12.3723 15.529C11.1233 15.319 10.0304 16.288 10.0304 17.5V20.7C10.0304 20.866 9.89632 21 9.73032 21H7.00034C5.00034 21 4.00034 20 4.00034 18V13.08C4.59034 13.36 5.24036 13.5 5.90036 13.5C7.04036 13.5 8.13031 13.1 8.97031 12.44C9.81031 13.1 10.8903 13.5 12.0003 13.5C13.1203 13.5 14.2004 13.1 15.0404 12.44C15.8804 13.1 16.9703 13.5 18.1103 13.5C18.7603 13.5 19.4103 13.36 20.0003 13.08ZM7.50034 3C5.00034 3 4.61729 3.81999 4.20529 5.03799L3.16538 8.11099C2.72738 9.40499 3.17035 10.902 4.36435 11.592C4.81335 11.852 5.33838 12 5.89938 12C7.22938 12 8.53832 11.17 8.95432 10C9.36032 11.17 10.6694 12 11.9994 12C13.3294 12 14.6383 11.17 15.0443 10C15.4603 11.17 16.7703 12 18.0993 12C18.6613 12 19.1854 11.852 19.6344 11.592C20.8284 10.902 21.2713 9.40499 20.8333 8.11099L19.7933 5.03799C19.3833 3.81999 19.0003 3 16.5003 3H7.50034Z"
@@ -87,7 +88,7 @@ const AddListingPage = () => {
                 </svg>
               }
               featureText="Sell Property"
-              exstyle="w-[174px] bg-[#E8AE00]"
+              exstyle="w-[200px] bg-[#E8AE00]"
               onClick={() => navigate("/add-listing-steps")}
             />
 
@@ -98,6 +99,7 @@ const AddListingPage = () => {
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
+                  className="sellproperty"
                   xmlns="http://www.w3.org/2000/svg"
                   // onClick={()=>setOpen(true)}
                 >
@@ -110,7 +112,7 @@ const AddListingPage = () => {
                 </svg>
               }
               featureText="Rent Property"
-              exstyle="w-[181px] bg-[#E8AE00]"
+              exstyle="w-[200px] bg-[#E8AE00]"
               onClick={() => setOpen(true)}
             />
 
@@ -140,7 +142,7 @@ const AddListingPage = () => {
 
       {/* why list with us */}
       <div className="h-[672px] py-[56px] px-[100px] pb-[40px] flex flex-col gap-10 ">
-        <div className="w-[1240px] h-[56px] font-semibold text-5xl">
+        <div className="listwithus">
           <p>Why List with Us</p>
         </div>
         <div className="w-[1240px] h-[480px] gap-[30px] grid grid-cols-2">
@@ -201,13 +203,13 @@ const AddListingPage = () => {
       </div>
 
       {/* how it works image */}
-      <div className="h-[818px] w-[1440px] py-[40px] px-[100px] gap-[40px]">
-        <div className="h-[128px] w-[1240px] gap-[20px]">
-          <div className="w-[1240px] h-[56px] flex justify-between font-semibold text-5xl">
-            <p className="w-[1240px] h-[56px]">How it Works</p>
+      <div className="h-[818px] w-[1300px] py-[40px] px-[100px] gap-[40px]">
+        <div className="h-[128px] w-[1240px]  gap-[20px]">
+          <div className="howitworks">
+            <p className="">How it Works</p>
           </div>
-          <div className="w-[1240px] h-[52px] flex justify-between font-medium text-lg mt-3">
-            <p className="w-[1240px] h-[52px]">
+          <div className="unlockproperty">
+            <p className="">
               Unlock your property's potential and become a hero for home
               seekers. List with us today for maximum exposure and seamless
               transactions. Here’s how it works{" "}
@@ -215,9 +217,9 @@ const AddListingPage = () => {
           </div>
         </div>
 
-        <div className="w-[1240px] h-[570px] flex justify-between ">
+        <div className=" adddetails w-[1240px] h-[570px] flex justify-between ">
           <div className="w-[605px] h-[570px] gap-[40px]">
-            <div className="w-[605px] h-[480px] space-y-[20px]">
+            <div className=" w-[605px] h-[480px] space-y-[20px]">
               <div>
                 {" "}
                 <CtaCards
@@ -252,11 +254,8 @@ const AddListingPage = () => {
           </div>
           <div className="w-[605px] h-[570px] rounded-[20px] gap-[15px] ">
             <div className="w-[605px] h-[570px] gap-[20.63px] relative">
-              <img
-                className="w-[605px] h-[570px] rounded-[18.75px]"
-                src={HowItWorks}
-                alt=""
-              />
+             
+              <iframe auto className="w-[605px] h-[570px] rounded-[18.75px]" src={HowItWorks} frameborder="0"></iframe>
               <div className="absolute top-[260px] left-[260px] w-[81.86px] h-[57.86px] rounded-[33.86px] py-4 px-6 bg-[#F9FAFB] gap-[11.29px]">
                 <div className="h-[33.86px] w-[33.86px] ">
                   <div className="ml-[6px]">{play}</div>
@@ -268,55 +267,9 @@ const AddListingPage = () => {
       </div>
 
       {/* customer reviews */}
-      <div className="h-[614px] w-[1440px] pt-14 bg-[#EBFFFD] gap-x-10 gap-y-10">
-        <div className="h-[102px] gap-[20px] ">
-          <div className="h-[56px] font-semibold text-5xl flex justify-between px-[100px] gap-[20px]">
-            <div>Featured Properties</div>
-            <div>
-              <button className="w-[189px] h-[50px] rounded-xl py-3 px-4 gap-[8px] bg-[#01B8C6] flex items-center">
-                <div className="h-[26px] w-[125px] font-medium text-lg">
-                  {" "}
-                  See all reviews
-                </div>
-                <div>
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8.99978 19.7498C8.80778 19.7498 8.61575 19.6768 8.46975 19.5298C8.17675 19.2368 8.17675 18.7618 8.46975 18.4688L14.9397 11.9988L8.46975 5.52883C8.17675 5.23583 8.17675 4.7608 8.46975 4.4678C8.76275 4.1748 9.23779 4.1748 9.53079 4.4678L16.5308 11.4678C16.8238 11.7608 16.8238 12.2358 16.5308 12.5288L9.53079 19.5288C9.38379 19.6768 9.19178 19.7498 8.99978 19.7498Z"
-                      fill="#0D0E0F"
-                    />
-                  </svg>
-                </div>
-              </button>
-            </div>
-          </div>
-          <div className="h-[26px] flex justify-between px-[100px] mt-6">
-            <p className="w-[263px] h-[26px] text-lg font-medium ">
-              See what our client’s are saying
-            </p>
-          </div>
-        </div>
-        <div className=" h-[216px] w-[1440px] gap-5  grid grid-cols-4 overflow-hidden mt-10">
-          <div className="w-[326px]">
-            {" "}
-            <ReviewCard />
-          </div>
-          <div className="w-[326px]">
-            <ReviewCard />
-          </div>
-          <div className="w-[326px]">
-            <ReviewCard />
-          </div>
-          <div className="w-[326px]">
-            <ReviewCard />
-          </div>
-        </div>
-      </div>
+      <div style={{marginTop:"5vmax"}}>
+    <CustomerReview/>
+    </div>
       <Signin open={open} setOpen={setOpen} />
     </>
   );

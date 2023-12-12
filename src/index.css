@@ -4,8 +4,37 @@
 
 
 .maillogo{
-    height: 58px;
-    width: 173px;
+    height: 70px;
+    width: 200px;
+    object-fit: cover;
+}
+.cursorHover h5{
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.cursorHover .hoverLink{
+   
+   height: 3vmax;
+   transition: 0.5s;
+   z-index: 999;
+   color: black;
+   
+    
+}
+
+
+
+.cursorHover .hoverLink:hover{
+    
+  background-color: #dfab11;
+  border-radius: 10px;
+  /* color: white; */
+  z-index: 999;
+  
+  
 }
 
 .homesec1{
@@ -227,7 +256,8 @@
     margin-top: 56px;
     margin-bottom: 40px;
     margin-left: 6vmax;
-    font-family: 'Exo', sans-serif;
+    /* font-family: 'Exo', sans-serif; */
+    font-family: 'Kanit', sans-serif;
     font-weight: 600;
 }
 .featuredcard{
@@ -446,7 +476,8 @@
 .scroll-animation{
     width: 300%;
     display: flex;
-    animation: scroll 30s linear infinite;  
+    animation: scroll 20s linear infinite; 
+    /* background-color: #dfab11;  */
 }
 .scroll-animation:hover{
     animation-play-state: paused;
@@ -455,10 +486,12 @@
 
  .blogcard1{
     width: 25vmax;
+    height: auto;
     border-radius: 1vmax;
     padding: 0.5vmax;
     margin-top: 1vmax;
     margin-left: 2vmax;
+    
    
     
 }
@@ -467,12 +500,12 @@
          transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-250px * 9));
+        transform: translateX(calc(-250px * 8));
     }
 }
 .blogcard1 img{
     width: 100%;
-    height: 45%;
+    height: 40%;
     border-radius: 1vmax;
 }
 .blogcard1 h4{
@@ -487,6 +520,7 @@
 }
 .hakkies {
     width: 100%;
+    margin-top: 3vmax;
     
 
 }
@@ -503,45 +537,69 @@
 }
 
 @media (max-width:767px) {
-    .blogcard{
-      
-        justify-content: center;
+    .scroll-animation{
+        width: 300vmax;
+        /* display: flex;
+        animation: scroll 20s linear infinite;  */
+        /* background-color: #dfab11;  */
     }
+    /* .scroll-animation:hover{
+        animation-play-state: paused;
+    
+    } */
+    
      .blogcard1{
-        width: 90%;
-        border-radius: 1vmax;
+        /* width: 25vmax; */
+        height: auto;
+        /* border-radius: 1vmax;
         padding: 0.5vmax;
         margin-top: 1vmax;
+        margin-left: 2vmax; */
+        
+       
         
     }
-    .blogcard1 img{
+    /* @keyframes scroll {
+        0% {
+             transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-250px * 8));
+        }
+    } */
+    /* .blogcard1 img{
         width: 100%;
+        height: 40%;
         border-radius: 1vmax;
-    }
+    } */
     .blogcard1 h4{
-        height:auto;
-        font-size: 2.2vmax;
-        font-weight: 600;
+        height: auto;
+        font-size: 1.6vmax;
+        /* font-weight: 600; */
+        /* margin-top: 20px; */
     }
     .blogcard1 p{
-        font-size: 1.7vmax;
+        height: auto;
+        font-size: 1.4vmax;
     }
     .hakkies {
         width: 100%;
+        margin-top: 0vmax;
         
     
     }
     .hakkies img{
-        width: 5vmax;
-        height: 5vmax;
+        width: 3vmax;
+        height: 3vmax;
     }
     .hakkies h5{
-        font-size: 2.2vmax;
+        font-size: 1vmax;
         font-weight: 700;
     }
     .hakkies p{
-        font-size: 1.7vmax;
+        font-size: 1vmax;
     }
+    
 }
 
 /* properties component css */
@@ -662,7 +720,7 @@
 .CustomerReview .customer .customerBottom{
     width: 300%;
     display: flex;
-    animation: scroll 30s linear infinite;  
+    animation: review 30s linear infinite;  
     /* width: 100%; */
     display: flex;
     margin-top: 1vmax;
@@ -671,6 +729,14 @@
 } 
 .CustomerReview .customer .customerBottom:hover{
     animation-play-state: paused;
+}
+@keyframes review {
+    0% {
+         transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
 }
 .CustomerReview .customer .customerBottom .Box{
     width: 398px;
@@ -741,7 +807,7 @@
     font-size: 20px;
 }
 
-@media (max-width:600px) {
+ @media (max-width:600px) {
    
     .CustomerReview .customer .CustomerTop h2{
         margin-left: 15px;
@@ -757,12 +823,12 @@
          font-size: 1.8vmax;
     } 
   
-    .CustomerReview .customer .customerBottom{
+    /* .CustomerReview .customer .customerBottom{
         flex-direction: column;
     } 
     .CustomerReview .customer .customerBottom .Box{
        margin-top: 1.5vmax;
-    } 
+    }  */
    
    
    
@@ -777,8 +843,8 @@
     .CustomerReview .customer .CustomerTop{
               width: 100%;
               height: auto;
-              /* justify-content: space-evenly; */
-    }
+               justify-content: space-evenly; 
+     }
     .CustomerReview .customer .CustomerTop h2{
               font-size: 2.5vmax;
     }
@@ -790,9 +856,9 @@
     padding-left: 4.7vmax;
 justify-content: start;
     } 
-    .CustomerReview .customer .customerBottom{
-             /* flex-direction: column; */
-             flex-wrap: wrap;
+    /* .CustomerReview .customer .customerBottom{
+             
+              flex-wrap: wrap;
              width: 100%;
              justify-content: space-evenly;
     } 
@@ -814,5 +880,5 @@ justify-content: start;
     } 
     .CustomerReview .customer .customerBottom .Box .Bbtm .icons i{
               font-size: 2.5vmax;
-    }
-}
+    }  */
+}  

@@ -15,12 +15,12 @@ const BlogSec3 = () => {
    
        <img  onClick={()=>{navigate(`/BlogDetailPage/${index+1}`)}} src={value.img} alt="" />
        <h4>{value.title}</h4>
-       <p>{value.para}</p>
+       <p className='mt-3'>{value.shortdesc} <span onClick={()=>{navigate(`/BlogDetailPage/${index+1}`)}} style={{cursor:"pointer"}} className='text-primary'>Read-more</span></p>
        <div className='hakkies d-flex  align-items-center'>
-        <img className='rounded-circle' src={value.img1} alt="" />
+        {/* <img className='rounded-circle' src={value.img1} alt="" /> */}
         <div className='ms-3 mt-3'>
-            <h5>{value.name}</h5>
-            <p>{value.date}</p>
+            {/* <h5>{value.name}</h5> */}
+            {/* <p>{value.date}</p> */}
         </div>
        </div>
     </div>

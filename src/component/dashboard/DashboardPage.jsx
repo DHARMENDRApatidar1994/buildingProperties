@@ -1,8 +1,8 @@
 import React from "react";
-import MyAccount from "./Myaccount";
+import MyAccount from "./my_accountPages/Myaccount";
 import { Link, Route, Routes } from "react-router-dom";
-import MyProfile from "./MyProfile";
-import ReadMessage from "./my_accountPages/ReadMessage";
+import MyProfile from "./my_accountPages/MyProfile";
+import ReadMessage from "./message/MyMessage";
 
 function DashboardPage() {
   return (
@@ -91,7 +91,7 @@ function DashboardPage() {
           <Routes>
             <Route path="/my-account/*" element={<MyAccount />} />
             <Route path="/my-profile" element={<MyProfile />} />
-            <Route path="/my-account/message/:slug" element={<ReadMessage />} />
+            <Route path="/my-account/message/:slug" element={<ReadMessage/>} />
           </Routes>
 
           <div>

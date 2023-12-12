@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import '../forrent/Forrent.css'
 import { sale } from './SaleData'
+import { useNavigate } from 'react-router-dom'
 
 const ForSalesec1 = () => {
+    const navigate = useNavigate()
 
     const [isFilterOpen, setIsFilterOpen] = useState(false)
 
@@ -173,7 +175,7 @@ const ForSalesec1 = () => {
 
                     <div className='featuredcard1' key={index}>
                         <div className='featuredimg'>
-                            <img src={value.image} alt="" />
+                            < img onClick={()=>{navigate(`/propertyDetailPage/${index}`)}} src={value.image} alt="" />
                             <i class="ri-heart-line "></i>
                         </div>
                         <div>

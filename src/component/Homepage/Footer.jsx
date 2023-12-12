@@ -16,14 +16,15 @@ const Footer = () => {
                 <div className='fdisplay'>
                     <div className='fmain'>
                         <div className='fone'>
-                            <h6>Sell your property</h6>
-                            <h6>Let youe property</h6>
-                            <h6>Invest your property</h6>
-                        </div>
-                        <div className='ftwo'>
-                            <h6>Rent a property</h6>
+                        <h6>Rent a property</h6>
                             <h6>Buy a property</h6>
                             <h6>Invest in a property</h6>
+                           
+                        </div>
+                        <div className='ftwo'>
+                        <h6>Sell your property</h6>
+                            <h6>Let your property</h6>
+                           
                         </div>
                         <div className='fthree'>
                            <Link  className='text-decoration-none ' to="/about"> <h6>About us</h6></Link>

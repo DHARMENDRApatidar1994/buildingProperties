@@ -1,6 +1,8 @@
 import React from 'react'
 import { investment } from '../forinvestment/InvestmentData'
+import { useNavigate } from 'react-router-dom'
 const ForInvestmentsec2 = () => {
+  const navigate = useNavigate()
   return (
     <div>
         <div className='d-flex justify-content-between align-items-center'>
@@ -15,7 +17,7 @@ const ForInvestmentsec2 = () => {
        
         <div className='featuredcard1' key={index}>
             <div className='featuredimg'>
-                <img src={value.image} alt="" />
+                <img onClick={()=>{navigate(`/propertyDetailPage/${index}`)}} src={value.image} alt="" />
                 <i class="ri-heart-line "></i>
             </div>
             <div>

@@ -23,9 +23,9 @@ const Homesec1 = () => {
             <p>Your one-stop real estate destination for buying, 
 renting, and selling properties.</p>
             <div className='homesecsale'>
-              <h6 onClick={()=>{navigate("/searchforsale")}}><i class="ri-price-tag-fill me-1"></i>For Sale</h6>
-              <h6 onClick={()=>{navigate("/propertyDetailPage")}}><i class="ri-price-tag-2-line me-1"></i>For Rent</h6>
-              <h6><i class="ri-parent-fill me-1"></i>For Investment</h6>
+              <h6 onClick={()=>{navigate("/forsale")}}><i class="ri-price-tag-fill me-1"></i>For Sale</h6>
+              <h6 onClick={()=>{navigate("/forrent")}}><i class="ri-price-tag-2-line me-1"></i>For Rent</h6>
+              <h6 onClick={()=>{navigate("/forinvestment")}}><i class="ri-parent-fill me-1"></i>For Investment</h6>
               <div >
               <input className='border border-warning rounded' type="text" placeholder='London..'  value={inputValue}
               onChange={handleInputChange} list="programmingLanguages" />
@@ -46,7 +46,7 @@ renting, and selling properties.</p>
                 <option value="Swift">Swift</option> 
             </datalist> 
               </div>
-              <button><i class="ri-search-line me-2"></i>Search</button>
+              <button onClick={()=>{navigate("/searchforsale")}}><i class="ri-search-line me-2"></i>Search</button>
             </div>
             </div>
         

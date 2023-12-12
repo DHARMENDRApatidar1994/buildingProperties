@@ -17,9 +17,10 @@ import ContactUs from "./pages/ContactUs";
 import ContactUsValidation from "./pages/ContactUsValidation";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
-import MyAccount from "./component/dashboard/Myaccount";
+// import MyAccount from "./component/dashboard/Myaccount";
 import DashboardPage from "./component/dashboard/DashboardPage";
 import ListingSteps from "./pages/ListingForms/ListingSteps";
+import ReviewPage from "./component/review/ReviewPage";
 
 const App = () => {
   return (
@@ -33,7 +34,7 @@ const App = () => {
         <Route path="/forsale" element={<ForSale />} />
         <Route path="/forinvestment" element={<ForInvestment />} />
         <Route path="/searchforsale" element={<SearchForSale />} />
-        <Route path="/propertyDetailPage" element={<PropertyDetailPage />} />
+        <Route path="/propertyDetailPage/:id" element={<PropertyDetailPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/addlisting" element={<AddListingPage />} />
         <Route path="/contact" element={<ContactUs />} />
@@ -41,6 +42,7 @@ const App = () => {
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         <Route path="/termsofuse" element={<TermsOfUse />} />
         <Route path="/add-listing-steps" element={<ListingSteps />} />
+        <Route path="/reviewpage" element={<ReviewPage/>} />
 
         <Route path="/dashboard/*" element={<DashboardPage />} />
       </Routes>

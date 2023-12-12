@@ -19,6 +19,7 @@ const ReviewPage = () => {
         </div>
         <h2 className='reviewpagecustomer'>Customer Review</h2>
         <div className='PageReview'>
+         
         {review.map((value,index)=>(
 
       

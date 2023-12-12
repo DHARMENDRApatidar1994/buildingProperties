@@ -14,7 +14,7 @@ const BlogSec1 = () => {
               
                </div>
             </div>
-            <img src="BuildingIllustration.png" alt="" />
+            <img className='blogimg'  src="BuildingIllustration.png" alt="" />
         </div>
         <div className='fbloginput'>
                        <input type="text" placeholder='Subscribe to our newsletter' />
