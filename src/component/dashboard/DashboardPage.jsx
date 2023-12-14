@@ -4,7 +4,7 @@ import { Link, Route, Routes } from "react-router-dom";
 import MyProfile from "./my_accountPages/MyProfile";
 import ReadMessage from "./message/MyMessage";
 
-function DashboardPage(onSignInClick) {
+function DashboardPage() {
 
  
   return (
@@ -75,7 +75,7 @@ function DashboardPage(onSignInClick) {
           </div>
           <div className="d-flex align-items-center">
             <img className="me-3 ms-3" src="signout.png" alt="" />
-           <Link className="col-8 text-dark text-decoration-none" onClick={onSignInClick} to='/'> <p  className="col-12 mt-3">Sign out</p></Link>
+            <p className="col-8 mt-3">Sign out</p>
             <span></span>
           </div>
           <div className="d-flex align-items-center">
