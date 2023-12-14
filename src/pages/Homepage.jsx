@@ -18,7 +18,6 @@ const Homepage = () => {
      <Blog/>
      <Properties/>
      <CustomerReview/>
-     <Link to='/animation'>Animation</Link>
     </div>
   )
 }

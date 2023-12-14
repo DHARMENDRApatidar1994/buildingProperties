@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Signin from '../Popupfile/Signin';
 import maillogo from '../../assets/Images/navimage/hdlogo.svg'
 import Homepounds from '../../assets/Images/navimage/Home pounds.png'
+import DashboardPage from '../dashboard/DashboardPage';
 // import DashboardPage from '../dashboard/DashboardPage';
 
 const Navbar = () => {
@@ -65,7 +66,7 @@ const Navbar = () => {
                 <Link className='hoverLink'  style={{textDecoration:"none"}}  to='/forinvestment'><h5 style={{  backgroundColor: activeItem === 'forinvestment' ? '#ebfffd' : 'transparent'  }} onClick={() => handleItemClick('forinvestment')}>For investment</h5></Link> 
                 <Link className='hoverLink'  style={{textDecoration:"none"}}  to='/blog'><h5 style={{  backgroundColor: activeItem === 'blog' ? '#ebfffd' : 'transparent'  }} onClick={() => handleItemClick('blog')}>Blog</h5></Link>
                 {isUserSignedIn ? (
-                   <h6 >Account</h6>
+                  <Link className='hoverLink' style={{textDecoration:"none"}} > <h5 style={{  backgroundColor: activeItem === 'signin' ? '#ebfffd' : 'transparent' }}>Account</h5></Link>
                   ) : (
                  <Link className='hoverLink' style={{textDecoration:"none"}} > <h5   style={{  backgroundColor: activeItem === 'signin' ? '#ebfffd' : 'transparent' }} onClick={() => handleSign('signin')}>Sign in</h5></Link>
                 )}
@@ -76,7 +77,7 @@ const Navbar = () => {
         </div>
      
          <Signin open={open} setOpen={setOpen} onSignInClick={toggleSignIn} />
-       
+          {/* <DashboardPage onDashboardPageClick={toggleSignIn}/> */}
         
          
        
