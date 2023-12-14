@@ -105,81 +105,119 @@
 }
 
 
-@media (max-width:600px) {
+@media (max-width:767px) {
     .signflex{
-       
+        width: 100%;
+        display: flex;
         justify-content: center;
-
     }
     .signflex .signone{
         display: none;
     }
-    
+    .sinmain{
+        width: 90%;
+        height: auto;
+       margin-top: 11.5vmax;
+       transform: translateX(3vmax);
+    }
     .signflex .signtwo{
         width: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        
-    }
-    .signflex .signtwo h5{
-        font-size: 2.3vmax;
+        }  
        
-        
-    }
-    .signflex .signtwo h6{
-        font-size: 1.7vmax;
-       
-    }
-    .signflex .signtwo h6 span{
-        font-size: 1.7vmax;
-    }
-    .signflex .signtwo input{
-        font-size: 1.5vmax;
-      
-    }
-    .signflex .signtwo .ri-eye-off-fill{
-       
-       margin-left: 30vmax;
-       margin-top: -4vmax;
-    }
-    .signflex .signtwo p{
-        font-size: 1.6vmax;
-       
-    }
-    .signflex .signtwo button{
-        font-size: 1.7vmax;
-        
-    }
-    .signflex .signtwo h4{
-        font-size: 1.6vmax;
-       
-    }
+        .signflex .signtwo h5{
+            font-size: 2vmax;
+        }
+        .signflex .signtwo h6{
+            font-size: 1.5vmax;   
+        }
+        .signflex .signtwo h6 span{
+            font-size: 1.5vmax;
+        }
+        .signflex .signtwo input{
+          
+            font-size: 1.4vmax;
     
-    .signflex .signtwo i{
-        font-size: 2vmax;
-        padding: 1vmax;
-    }
+            
+        }
+        .signflex .signtwo .ri-eye-off-fill{
+            font-size: 1.6vmax;
+         
+        }
+        .signflex .signtwo p{
+            font-size: 1.4vmax;
+          
+        }
+        .signflex .signtwo button{
+          
+            font-size: 1.5vmax;
+        }
+        .signflex .signtwo h4{
+            font-size: 1.6vmax;
+        } 
+        .signflex .signtwo .signicon{
+          
+            margin-bottom: 2.8vmax;
+        
+          
+           
+        }
 }
 
 
-@media (min-width:600px) and (max-width:950px) {
+@media (min-width:768px) and (max-width:1024px) {
     .signflex{
-       
+        width: 100%;
+        display: flex;
         justify-content: center;
-
     }
     .signflex .signone{
         display: none;
     }
-    
+    .sinmain{
+        width: 90%;
+        height: auto;
+       margin-top: 11.5vmax;
+       transform: translateX(3vmax);
+    }
     .signflex .signtwo{
         width: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        }  
+       
+        .signflex .signtwo h5{
+            font-size: 2vmax;
+        }
+        .signflex .signtwo h6{
+            font-size: 1.5vmax;   
+        }
+        .signflex .signtwo h6 span{
+            font-size: 1.5vmax;
+        }
+        .signflex .signtwo input{
+          
+            font-size: 1.4vmax;
+    
+            
+        }
+        .signflex .signtwo .ri-eye-off-fill{
+            font-size: 1.6vmax;
+         
+        }
+        .signflex .signtwo p{
+            font-size: 1.4vmax;
+          
+        }
+        .signflex .signtwo button{
+          
+            font-size: 1.5vmax;
+        }
+        .signflex .signtwo h4{
+            font-size: 1.6vmax;
+        } 
+        .signflex .signtwo .signicon{
+          
+            margin-bottom: 2.8vmax;
         
-    }
+          
+           
+        }
 }

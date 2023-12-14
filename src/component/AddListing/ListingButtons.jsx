@@ -6,16 +6,16 @@ const ListingButtons = ({open, setOpen}) => {
   const [isSignUpOpen, setSignUpOpen] = useState(false);
   return (
     <>
-    <div className="bg-white flex items-center w-[643px] h-[82px] space-x-2 rounded-xl p-4  shadow-xl">
+    <div className="sellproperty bg-white flex items-center justify-evenly    rounded-xl p-2  shadow-xl">
       <FeatureButton
         svg={
           <svg
-            width="24"
-            height="24"
+            width="15"
+            height="15"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="mr-2"
+            className="mr-1"
           >
             <path
               d="M20.0003 13.08V18C20.0003 20 19.0003 21 17.0003 21H14.3303C14.1643 21 14.0304 20.866 14.0304 20.7V17.622C14.0304 16.625 13.3553 15.695 12.3723 15.529C11.1233 15.319 10.0304 16.288 10.0304 17.5V20.7C10.0304 20.866 9.89632 21 9.73032 21H7.00034C5.00034 21 4.00034 20 4.00034 18V13.08C4.59034 13.36 5.24036 13.5 5.90036 13.5C7.04036 13.5 8.13031 13.1 8.97031 12.44C9.81031 13.1 10.8903 13.5 12.0003 13.5C13.1203 13.5 14.2004 13.1 15.0404 12.44C15.8804 13.1 16.9703 13.5 18.1103 13.5C18.7603 13.5 19.4103 13.36 20.0003 13.08ZM7.50034 3C5.00034 3 4.61729 3.81999 4.20529 5.03799L3.16538 8.11099C2.72738 9.40499 3.17035 10.902 4.36435 11.592C4.81335 11.852 5.33838 12 5.89938 12C7.22938 12 8.53832 11.17 8.95432 10C9.36032 11.17 10.6694 12 11.9994 12C13.3294 12 14.6383 11.17 15.0443 10C15.4603 11.17 16.7703 12 18.0993 12C18.6613 12 19.1854 11.852 19.6344 11.592C20.8284 10.902 21.2713 9.40499 20.8333 8.11099L19.7933 5.03799C19.3833 3.81999 19.0003 3 16.5003 3H7.50034Z"
@@ -24,14 +24,15 @@ const ListingButtons = ({open, setOpen}) => {
           </svg>
         }
         featureText="Sell Property"
-        exstyle="w-[186px] bg-[#E8AE00]"
+        
+        exstyle=" bg-[#E8AE00]"
       />
 
       <FeatureButton
         svg={
           <svg
-            width="24"
-            height="24"
+            width="15"
+            height="15"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -45,14 +46,14 @@ const ListingButtons = ({open, setOpen}) => {
           </svg>
         }
         featureText="Rent Property"
-        exstyle="w-[188px] bg-[#E8AE00]"
+        exstyle=" bg-[#E8AE00]"
         onClick={()=>setOpen(true)}/>
 
       <FeatureButton
         svg={
           <svg
-            width="24"
-            height="24"
+            width="15"
+            height="15"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +65,7 @@ const ListingButtons = ({open, setOpen}) => {
           </svg>
         }
         featureText="Invest in a property"
-        exstyle="w-[226px] bg-[#FFF9E6]"
+        exstyle=" bg-[#FFF9E6]"
         onClick={()=>setOpen(true)} />
       
     </div>

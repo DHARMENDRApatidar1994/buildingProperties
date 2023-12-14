@@ -17,16 +17,17 @@ const Homesec1 = () => {
     <div>
         <div className='homesec1'>
           <div className='homesecoverlay'>
-            <img className='homesec1img' src="Vector.png" alt="" />
+            <div className='homesec1img'></div>
+            {/* <img className='homesec1img' src="Vector.png" alt="" /> */}
             </div>
             <h1>Discover Your Dream Home</h1>
             <p>Your one-stop real estate destination for buying, 
-renting, and selling properties.</p>
+                renting, and selling properties.</p>
             <div className='homesecsale'>
               <h6 onClick={()=>{navigate("/forsale")}}><i class="ri-price-tag-fill me-1"></i>For Sale</h6>
               <h6 onClick={()=>{navigate("/forrent")}}><i class="ri-price-tag-2-line me-1"></i>For Rent</h6>
               <h6 onClick={()=>{navigate("/forinvestment")}}><i class="ri-parent-fill me-1"></i>For Investment</h6>
-              <div >
+              <div>
               <input className='border border-warning rounded' type="text" placeholder='London..'  value={inputValue}
               onChange={handleInputChange} list="programmingLanguages" />
               <i class="ri-close-line" onClick={handleClearInput} style={{marginLeft:"-22px"}}></i>

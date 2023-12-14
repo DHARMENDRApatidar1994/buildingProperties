@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "./component/Homepage/Navbar";
-import Animation from "./component/Homepage/Animation";
 import Footer from "./component/Homepage/Footer";
 import { Route, Routes } from "react-router-dom";
 import Homepage from "./pages/Homepage";
@@ -17,7 +16,6 @@ import ContactUs from "./pages/ContactUs";
 import ContactUsValidation from "./pages/ContactUsValidation";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
-// import MyAccount from "./component/dashboard/Myaccount";
 import DashboardPage from "./component/dashboard/DashboardPage";
 import ListingSteps from "./pages/ListingForms/ListingSteps";
 import ReviewPage from "./component/review/ReviewPage";
@@ -47,7 +45,6 @@ const App = () => {
         <Route path="/termsofuse" element={<TermsOfUse />} />
         <Route path="/add-listing-steps" element={<ListingSteps />} />
         <Route path="/reviewpage" element={<ReviewPage/>} />
-        <Route path="/animation" element={<Animation/>} />
 
         <Route path="/dashboard/*" element={<DashboardPage />} />
       </Routes>

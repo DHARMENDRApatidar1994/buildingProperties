@@ -10,9 +10,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    
-    
-    /* background-color: red; */
+
 }
 .Addlisting-overlay .overlayimg{
     position: absolute;
@@ -76,7 +74,157 @@
     
 }
 .adddetails{
+    width: 100%;
     margin-top: 3vmax;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: red; */
+
+}
+.adddetails .adddetails-left{
+    width: 45%;
+    /* background-color: aqua; */
+}
+.adddetails .adddetails-right{
+    width: 45%;
+ 
+    /* background-color: blue; */
+}
+
+
+@media (max-width:767px) {
+    .mainoverlaydiv{
+        width: 100%;
+        height: 35vmax;
+        position: relative;
+        padding-top: 5vmax;
+        margin-bottom: 15vmax;
+    }
+    .Addlisting-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .Addlisting-overlay .overlayimg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .textbox{
+        width: 80%;
+        top: 60%;
+    }
+    .featurebuttonaddlisting{
+        width: 100%;  
+        margin-left: 0vmax;
+        font-size: 1.4vmax;
+        margin-top: -12.5vmax;
+    }
+    .featurebuttonaddlisting .sellproperty{
+        margin-right: 1vmax;  
+    } 
+    .listwithus{
+        font-size: 2.5vmax;
+        font-weight: 600;
+        margin-top: 2vmax;
+    }
+    .howitworks{
+        font-size: 2.5vmax;
+        font-weight: 600;
+        margin-top: 5.5vmax;
+    }
+    .unlockproperty{
+        width: 80%;
+        font-size: 1.4vmax;
+    }
+    .adddetails{
+        width: 100%;
+        margin-top: 3vmax;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .adddetails .adddetails-left{
+        width: 100%;
+    }
+    .adddetails .adddetails-left .sellproperty{
+        font-size: 1.4vmax;
+    }
+    .adddetails .adddetails-right{
+        width: 100%;
+        margin-top: 4vmax;
+    }
+}
+
+
+
+@media (min-width:768px) and (max-width:1024px) {
+    .mainoverlaydiv{
+        width: 100%;
+        height: 35vmax;
+        position: relative;
+        padding-top: 5vmax;
+        margin-bottom: 15vmax;
+    }
+    .Addlisting-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .Addlisting-overlay .overlayimg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .textbox{
+        width: 80%;
+        top: 60%;
+    }
+    .featurebuttonaddlisting{
+        width: 100%;  
+        margin-left: 0vmax;
+        font-size: 1.4vmax;
+        margin-top: -12.5vmax;
+    }
+    .featurebuttonaddlisting .sellproperty{
+        margin-right: 1vmax;  
+    } 
+    .listwithus{
+        font-size: 2.5vmax;
+        font-weight: 600;
+        margin-top: 2vmax;
+    }
+    .howitworks{
+        font-size: 2.5vmax;
+        font-weight: 600;
+        margin-top: 5.5vmax;
+    }
+    .unlockproperty{
+        width: 80%;
+        font-size: 1.4vmax;
+    }
+    .adddetails{
+        width: 100%;
+        margin-top: 3vmax;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .adddetails .adddetails-left{
+        width: 90%;
+    }
+    .adddetails .adddetails-left .sellproperty{
+        font-size: 1.4vmax;
+    }
+    .adddetails .adddetails-right{
+        width: 90%;
+        margin-top: 4vmax;
+    }
 }
 
 

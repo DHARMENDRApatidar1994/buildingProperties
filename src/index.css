@@ -47,7 +47,7 @@
 .homesecoverlay{
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);  
+    background-color: rgba(0, 0, 0, 0.6);  
     position: relative;
     
 }
@@ -56,6 +56,41 @@
     height: 100%;
     position: absolute; 
     z-index: -1; 
+    background-image: url(https://images.unsplash.com/photo-1702274397667-14596faf1cd1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    transition: 5s;
+    animation-name: play;
+    animation-direction: alternate-reverse;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+@keyframes play {
+    
+    0%{
+        background-image: url(../public/1.svg);
+
+    }
+    20%{
+        background-image: url(../public/Vector.png);
+    }
+    40%{
+        background-image: url(../public/2.svg);
+    }
+    60%{
+        background-image: url(../public/1.svg);
+
+    }
+    80%{
+        background-image: url(../public/Vector.png);
+    }
+    100%{
+        background-image: url(../public/2.svg);
+    }
+    
+    
 }
 .homesec1 h1{
     width: 35%;
@@ -119,12 +154,13 @@
 @media (max-width:767px) {
     .maillogo{
         height: 48px;
-        width: 63px;
+        width: 110px;
     }
     .homesec1{
         width: 100%;
         height: 40vmax;
         position: relative;
+        padding-top: 8.5vmax;
     }
     .homesecoverlay{
         width: 100%;
@@ -137,7 +173,8 @@
     .homesec1img{
         width: 100%;
         height: 100%;
-        position: absolute;  
+        position: absolute; 
+
     }
     .homesec1 h1{
         width: 75%;
@@ -153,7 +190,7 @@
         font-size: 1.5vmax;
     }
     .homesecsale{
-        width: 85%;
+        width: 95%;
         position: absolute;
         bottom: -1vmax;
         display: flex;
@@ -167,9 +204,8 @@
         padding: 0px;
     }
     .homesecsale h6{
-        width: 30%;
-        font-size: 1.6vmax;
-       
+        width: 33%;
+        font-size: 1.6vmax; 
     }
     .homesecsale input{
   

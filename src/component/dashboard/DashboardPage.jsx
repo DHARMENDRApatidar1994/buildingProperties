@@ -75,7 +75,7 @@ function DashboardPage() {
           </div>
           <div className="d-flex align-items-center">
             <img className="me-3 ms-3" src="signout.png" alt="" />
-            <p onClick={onSignInClick} className="col-8 mt-3">Sign out</p>
+            <p  className="col-8 mt-3">Sign out</p>
             <span></span>
           </div>
           <div className="d-flex align-items-center">

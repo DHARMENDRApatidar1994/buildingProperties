@@ -14,7 +14,7 @@ const ForSalesec1 = () => {
 
 
     return (
-        <div>
+        <div className='pt-lg-0 pt-3'>
             <div className='rentsec1'>
                 <div className='rentsec1-left'>
                     <div>

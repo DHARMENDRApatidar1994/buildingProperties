@@ -76,8 +76,8 @@ const AddListingPage = () => {
             <FeatureButton
               svg={
                 <svg
-                  width="24"
-                  height="24"
+                  width="15"
+                  height="15"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -90,15 +90,15 @@ const AddListingPage = () => {
                 </svg>
               }
               featureText="Sell Property"
-              exstyle="w-[200px] bg-[#E8AE00]"
+              exstyle=" bg-[#E8AE00]"
               onClick={() => navigate("/add-listing-steps")}
             />
 
             <FeatureButton
               svg={
                 <svg
-                  width="24"
-                  height="24"
+                  width="15"
+                  height="15"
                   viewBox="0 0 24 24"
                   fill="none"
                   className="sellproperty"
@@ -114,15 +114,15 @@ const AddListingPage = () => {
                 </svg>
               }
               featureText="Rent Property"
-              exstyle="w-[200px] bg-[#E8AE00]"
+              exstyle=" bg-[#E8AE00]"
               onClick={() => setOpen(true)}
             />
 
             <FeatureButton
               svg={
                 <svg
-                  width="24"
-                  height="24"
+                  width="15"
+                  height="15"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +135,7 @@ const AddListingPage = () => {
                 </svg>
               }
               featureText="Invest in a property"
-              exstyle="w-[226px] bg-[#FFF9E6]"
+              exstyle=" bg-[#FFF9E6]"
               onClick={() => setOpen(true)}
             />
           </div>
@@ -143,7 +143,7 @@ const AddListingPage = () => {
       </div>
 
       {/* why list with us */}
-      <div className="h-[672px] py-[56px] px-[100px] pb-[40px] flex flex-col gap-10 ">
+      <div className="  ">
       <div >
         <h3 className='featuredtext'>Why Choose Us</h3>
         <div className='choosecard bg-light'>
@@ -225,8 +225,8 @@ const AddListingPage = () => {
       
 
       {/* how it works image */}
-      <div className="h-[818px] w-[1300px] py-[40px] px-[100px] gap-[40px]">
-        <div className="h-[128px] w-[1240px]  gap-[20px]">
+      <div className="">
+        <div className="container ">
           <div className="howitworks">
             <p className="">How it Works</p>
           </div>
@@ -239,9 +239,9 @@ const AddListingPage = () => {
           </div>
         </div>
 
-        <div className=" adddetails w-[1240px] h-[570px] flex justify-between align-center ">
-          <div className="w-[605px] h-[570px] gap-[40px]">
-            <div className=" w-[605px] h-[480px] space-y-[20px]">
+        <div className=" adddetails  ">
+          <div className="adddetails-left">
+            <div className="">
               <div>
                 {" "}
                 <CtaCards
@@ -274,16 +274,12 @@ const AddListingPage = () => {
               </div>
             </div>
           </div>
-          <div className="w-[605px] h-[570px] rounded-[20px] gap-[15px] ">
-            <div className="w-[605px] h-[570px] gap-[20.63px] relative">
+        
+            <div className="adddetails-right  relative">
              
-              <iframe  muted className="w-[605px] h-[570px] rounded-[18.75px]" src={HowItWorks} frameborder="0"></iframe>
-              <div className="absolute top-[260px] left-[260px] w-[81.86px] h-[57.86px] rounded-[33.86px] py-4 px-6 bg-[#F9FAFB] gap-[11.29px]">
-                <div className="h-[33.86px] w-[33.86px] ">
-                  <div className="ml-[6px]">{play}</div>
-                </div>
-              </div>
-            </div>
+              <iframe  height={550} className="col-12 rounded-[18.75px]" src={HowItWorks} frameborder="0"></iframe>
+            
+           
           </div>
         </div>
       </div>

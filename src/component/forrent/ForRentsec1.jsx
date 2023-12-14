@@ -9,7 +9,7 @@ const ForRentsec1 = () => {
   const [isFilterOpen,setIsFilterOpen] = useState(false)
 
   return (
-    <div>
+    <div className='pt-lg-0 pt-3'>
        <div className='rentsec1'>
             <div className='rentsec1-left'>
                 <div>
@@ -155,14 +155,10 @@ const ForRentsec1 = () => {
 
                 {/* filter page end */}
 
-                <div className='responsivefrentinput'>
-                       <input type="text" placeholder='Enter City,Zip,Address' />
-                       <button onClick={()=>setIsFilterOpen(true)} className='fw-semibold'> <i class="ri-equalizer-line"></i> </button>
-                       <button className='fw-semibold'><i class="ri-search-line"></i> </button>
-                </div>
-                <div className='d-flex justify-content-between align-items-center'>
+             
+                <div className='d-flex flex-lg-row flex-column justify-content-between align-items-center'>
                 <h3 className='featuredtext'>Properties For Rent</h3>
-                <select className='sortorder p-1 me-3'>
+                <select className='sortorder p-1 me-lg-3 me-0'>
                     <option >Sort order: <span className='fw-bold'>Anytime</span></option>
                 </select>
             </div>

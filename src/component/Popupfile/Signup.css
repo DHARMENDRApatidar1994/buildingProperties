@@ -113,91 +113,119 @@
 
 }
 
-@media (max-width:600px) {
-    .signflex2{
-       
-        justify-content: center;
-
-    }
+@media (max-width:767px) {
+   
     .signflex2 .signone2{
         display: none;
     }
+    .sinmain2{
+        width: 90%;
+        height: auto;
+       margin-top: 9vmax;
+        transform: translateX(3vmax);
+        z-index: 999;
+    }
+ 
+    .signflex2{
+        justify-content: center;
+    }
+   
+   
     
     .signflex2 .signtwo2{
         width: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
         
     }
     .signflex2 .signtwo2 h5{
-        font-size: 2.3vmax;
-       
-        
+        font-size: 1.8vmax;   
     }
     .signflex2 .signtwo2 h6{
-        font-size: 1.7vmax;
-       
+        font-size: 1.4vmax;
     }
     .signflex2 .signtwo2 h6 span{
-        font-size: 1.7vmax;
+        font-size: 1.4vmax;
     }
     .signflex2 .signtwo2 input{
-        font-size: 1.5vmax;
-      
+        font-size: 1.6vmax;
     }
     .signflex2 .signtwo2 .ri-eye-off-fill{
-       
-       margin-left: 30vmax;
-       margin-top: -4vmax;
+        font-size: 1.8vmax;  
     }
     .signflex2 .signtwo2 p{
-        width: 90%;
-        font-size: 1.5vmax;
+       
+        font-size: 1.4vmax;
        
     }
-    .signflex2 .signtwo2 button{
-        font-size: 1.7vmax;
-        
+    .signflex2 .signtwo2 button{  
+        font-size: 1.4vmax;   
     }
     .signflex2 .signtwo2 h4{
         font-size: 1.6vmax;
-       
     }
     .signflex2 .signtwo2 h3{
-        width: 80%;
-    font-size: 1.5vmax;
-    margin-top: 2vmax;
+        font-size: 1.4vmax;
     }
     .signflex2 .signtwo2 i{
-        font-size: 2vmax;
-        padding: 1vmax;
+        font-size: 1.9vmax;
     }
+    
+   
 }
 
 
-@media (min-width:600px) and (max-width:950px) {
-    .signflex2{
-       
-        justify-content: center;
-
-    }
+@media (min-width:768px) and (max-width:1024px) {
     .signflex2 .signone2{
         display: none;
     }
+    .sinmain2{
+        width: 90%;
+        height: auto;
+       margin-top: 9vmax;
+        transform: translateX(3vmax);
+        z-index: 999;
+    }
+ 
+    .signflex2{
+        justify-content: center;
+    }
+   
+   
     
     .signflex2 .signtwo2{
         width: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
         
     }
+    .signflex2 .signtwo2 h5{
+        font-size: 1.8vmax;   
+    }
+    .signflex2 .signtwo2 h6{
+        font-size: 1.4vmax;
+    }
+    .signflex2 .signtwo2 h6 span{
+        font-size: 1.4vmax;
+    }
+    .signflex2 .signtwo2 input{
+        font-size: 1.6vmax;
+    }
     .signflex2 .signtwo2 .ri-eye-off-fill{
+        font-size: 1.8vmax;  
+    }
+    .signflex2 .signtwo2 p{
        
-        margin-left: 30vmax;
-        margin-top: -3vmax;
-     }
+        font-size: 1.4vmax;
+       
+    }
+    .signflex2 .signtwo2 button{  
+        font-size: 1.4vmax;   
+    }
+    .signflex2 .signtwo2 h4{
+        font-size: 1.6vmax;
+    }
+    .signflex2 .signtwo2 h3{
+        font-size: 1.4vmax;
+    }
+    .signflex2 .signtwo2 i{
+        font-size: 1.9vmax;
+    }
+    
 }

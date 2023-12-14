@@ -23,7 +23,7 @@ const Featured = () => {
         <i class="ri-heart-line "></i>
     </div>
     <div>
-        <h4><i class="ri-money-pound-circle-fill"></i>{value.price}</h4>
+        <h4>£{value.price}</h4>
         <h5>{value.title}</h5>
     <p>{value.address}</p>
     <div className='featuredblack'>
@@ -45,7 +45,7 @@ const Featured = () => {
         <i class="ri-heart-line "></i>
     </div>
     <div>
-        <h4><i class="ri-money-pound-circle-fill"></i>{value.price}</h4>
+        <h4>£{value.price}</h4>
         <h5>{value.title}</h5>
     <p>{value.address}</p>
     <div className='featuredblack'>
@@ -67,7 +67,7 @@ const Featured = () => {
                     <i class="ri-heart-line "></i>
                 </div>
                 <div>
-                    <h4><i class="ri-money-pound-circle-fill"></i>{value.price}</h4>
+                    <h4>£{value.price}</h4>
                     <h5>{value.title}</h5>
                 <p>{value.address}</p>
                 <div className='featuredblack'>
